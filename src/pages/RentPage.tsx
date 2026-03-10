@@ -2,9 +2,8 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { getProductsByType } from "@/data/products";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
-import duottsF20_1 from "@/assets/duotts-f20-1.jpg";
+import duottsF20Hero from "@/assets/duotts-f20-hero.png";
 import livratoriHeroBg from "@/assets/livratori-hero-bg.jpg";
-import logo from "@/assets/logo.png";
 import { ChevronLeft, ChevronRight, Truck, Clock, Award, Phone, MessageCircle } from "lucide-react";
 
 const allBuyProducts = getProductsByType("cumparare");
@@ -91,14 +90,9 @@ const RentPage = () => {
           </div>
 
           {/* Right — Logo + Bike Image */}
-          <div className="flex flex-col items-center gap-6 lg:gap-8">
+          <div className="flex items-center justify-center">
             <img
-              src={logo}
-              alt="DrivePartner Logo"
-              className="h-16 w-auto drop-shadow-lg md:h-20 lg:h-24"
-            />
-            <img
-              src={duottsF20_1}
+              src={duottsF20Hero}
               alt="DUOTTS F20 — Bicicletă pentru livratori"
               className="max-h-[400px] w-auto rounded-lg object-contain drop-shadow-2xl"
             />
