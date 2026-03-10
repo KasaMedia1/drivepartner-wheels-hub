@@ -625,7 +625,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "fat-tire",
     image: duottsF26lite,
-    gallery: [duottsF26lite],
+    gallery: [duottsF26lite, lifestyleFattire, featureMotor],
     shortDescription: "E-bike fat-tire cu baterie Samsung 18AH și motor 500W.",
     longDescription: "DUOTTS F26 Lite oferă un echilibru perfect între performanță și preț. Motor de 500W, baterie Samsung de 18AH și anvelope fat 26×4.0 pentru tracțiune excelentă.",
     price: Math.round(1249 * EUR),
@@ -640,10 +640,10 @@ export const products: Product[] = [
       { icon: "weight", value: "150 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Motor 500W eficient", description: "Motor de 500W care oferă un echilibru excelent între putere și eficiență energetică pentru aventuri de zi cu zi." },
-      { title: "Baterie Samsung 18AH", description: "Celule Samsung premium pentru o autonomie de 80-90 km și o durată de viață extinsă a bateriei." },
-      { title: "Anvelope fat 26×4.0", description: "Anvelope late pentru tracțiune excelentă pe orice suprafață – asfalt, nisip, zăpadă sau noroi." },
-      { title: "Conectivitate Bluetooth", description: "Aplicație DUOTTS dedicată pentru monitorizarea performanțelor și setărilor bicicletei." },
+      { title: "Motor 500W eficient", description: "Motor de 500W care oferă un echilibru excelent între putere și eficiență energetică pentru aventuri de zi cu zi.", image: featureMotor },
+      { title: "Baterie Samsung 18AH", description: "Celule Samsung premium pentru o autonomie de 80-90 km și o durată de viață extinsă a bateriei.", image: featureBattery },
+      { title: "Anvelope fat 26×4.0", description: "Anvelope late pentru tracțiune excelentă pe orice suprafață – asfalt, nisip, zăpadă sau noroi.", image: featureFattire },
+      { title: "Conectivitate Bluetooth", description: "Aplicație DUOTTS dedicată pentru monitorizarea performanțelor și setărilor bicicletei.", image: featureDisplay },
     ],
     specs: {
       "Motor": "500W",
