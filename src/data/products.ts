@@ -30,6 +30,7 @@ export interface ProductHighlight {
 export interface ProductFeature {
   title: string;
   description: string;
+  image?: string;
 }
 
 export interface Product {
