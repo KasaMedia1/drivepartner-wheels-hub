@@ -1,12 +1,24 @@
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { useCartStore } from "@/store/cartStore";
 import { Minus, Plus, X, ShoppingCart } from "lucide-react";
 
 const CartPage = () => {
   const { items, removeItem, updateQuantity, getTotal, getItemsByType } = useCartStore();
+  const navigate = useNavigate();
   const purchaseItems = getItemsByType("cumparare");
   const rentalItems = getItemsByType("inchiriere");
   const total = getTotal();
+
+  const handleCheckout = () => {
+    const productNames = items.map((i) => `${i.product.name} x${i.quantity}`).join(", ");
+    const hasRental = rentalItems.length > 0;
+    const hasPurchase = purchaseItems.length > 0;
+    const optiune = hasRental && !hasPurchase ? "inchiriere" : hasPurchase && !hasRental ? "cumparare" : "";
+    const params = new URLSearchParams();
+    params.set("produse", productNames);
+    if (optiune) params.set("optiune", optiune);
+    navigate(`/contact-inchiriere?${params.toString()}`);
+  };
 
   if (items.length === 0) {
     return (
@@ -91,7 +103,10 @@ const CartPage = () => {
             <span className="text-lg text-muted-foreground">Total</span>
             <span className="font-heading text-2xl font-extrabold">{total.toLocaleString("ro-RO")} RON</span>
           </div>
-          <button className="mt-4 w-full rounded-md bg-primary py-4 font-heading text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90">
+          <button
+            onClick={handleCheckout}
+            className="mt-4 w-full rounded-md bg-primary py-4 font-heading text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+          >
             Finalizează comanda
           </button>
         </div>

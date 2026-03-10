@@ -1,15 +1,28 @@
 import { X, Plus, Minus, ShoppingCart } from "lucide-react";
 import { useCartStore } from "@/store/cartStore";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const CartPanel = () => {
   const { items, isOpen, setCartOpen, removeItem, updateQuantity, getTotal, getItemsByType } = useCartStore();
+  const navigate = useNavigate();
 
   if (!isOpen) return null;
 
   const purchaseItems = getItemsByType("cumparare");
   const rentalItems = getItemsByType("inchiriere");
   const total = getTotal();
+
+  const handleCheckout = () => {
+    setCartOpen(false);
+    const productNames = items.map((i) => `${i.product.name} x${i.quantity}`).join(", ");
+    const hasRental = rentalItems.length > 0;
+    const hasPurchase = purchaseItems.length > 0;
+    const optiune = hasRental && !hasPurchase ? "inchiriere" : hasPurchase && !hasRental ? "cumparare" : "";
+    const params = new URLSearchParams();
+    params.set("produse", productNames);
+    if (optiune) params.set("optiune", optiune);
+    navigate(`/contact-inchiriere?${params.toString()}`);
+  };
 
   return (
     <>
@@ -81,13 +94,12 @@ const CartPanel = () => {
               <span className="text-sm text-muted-foreground">Total</span>
               <span className="font-heading text-xl font-bold">{total.toLocaleString("ro-RO")} RON</span>
             </div>
-            <Link
-              to="/cos"
-              onClick={() => setCartOpen(false)}
+            <button
+              onClick={handleCheckout}
               className="block w-full rounded-md bg-primary py-3 text-center font-heading text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
             >
               Finalizează comanda
-            </Link>
+            </button>
           </div>
         )}
       </div>
