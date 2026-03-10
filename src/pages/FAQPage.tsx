@@ -4,28 +4,28 @@ import { ChevronDown } from "lucide-react";
 
 const faqs = [
   {
-    q: "Cum pot comanda o bicicletă?",
-    a: "Navighează la secțiunea „Cumpără", alege modelul dorit și adaugă-l în coș. Urmează pașii de finalizare a comenzii. Livrarea se face în toată România.",
+    q: "Cum pot comanda o biciclet\u0103?",
+    a: 'Navigheaz\u0103 la sec\u021Biunea "Cump\u0103r\u0103", alege modelul dorit \u0219i adaug\u0103-l \u00een co\u0219. Urmeaz\u0103 pa\u0219ii de finalizare a comenzii. Livrarea se face \u00een toat\u0103 Rom\u00e2nia.',
   },
   {
-    q: "Cum funcționează închirierea?",
-    a: "Alege bicicleta din secțiunea „Închiriază", selectează perioada dorită și completează rezervarea. Ridicarea se face de la sediul nostru din București sau putem organiza livrarea contra cost.",
+    q: "Cum func\u021Bioneaz\u0103 \u00eenchirierea?",
+    a: 'Alege bicicleta din sec\u021Biunea "\u00CEnchiriaz\u0103", selecteaz\u0103 perioada dorit\u0103 \u0219i completeaz\u0103 rezervarea. Ridicarea se face de la sediul nostru din Bucure\u0219ti sau putem organiza livrarea contra cost.',
   },
   {
-    q: "Ce este inclus în prețul de închiriere?",
-    a: "Fiecare închiriere include cască, lacăt, kit de reparații și asigurare de bază. Unele modele includ și GPS tracker.",
+    q: "Ce este inclus \u00een pre\u021Bul de \u00eenchiriere?",
+    a: "Fiecare \u00eenchiriere include casc\u0103, lac\u0103t, kit de repara\u021Bii \u0219i asigurare de baz\u0103. Unele modele includ \u0219i GPS tracker.",
   },
   {
-    q: "Care sunt condițiile de retur?",
-    a: "Ai 14 zile calendaristice de la primire pentru a returna produsul, în ambalajul original, fără urme de utilizare. Costurile de transport retur sunt suportate de cumpărător.",
+    q: "Care sunt condi\u021Biile de retur?",
+    a: "Ai 14 zile calendaristice de la primire pentru a returna produsul, \u00een ambalajul original, f\u0103r\u0103 urme de utilizare. Costurile de transport retur sunt suportate de cump\u0103r\u0103tor.",
   },
   {
-    q: "Oferiți garanție?",
-    a: "Da, toate bicicletele noi beneficiază de garanție de 2 ani pentru cadru și componente, plus garanție extinsă de 5 ani pentru cadru.",
+    q: "Oferi\u021Bi garan\u021Bie?",
+    a: "Da, toate bicicletele noi beneficiaz\u0103 de garan\u021Bie de 2 ani pentru cadru \u0219i componente, plus garan\u021Bie extins\u0103 de 5 ani pentru cadru.",
   },
   {
-    q: "Livrați în afara Bucureștiului?",
-    a: "Da, livrăm în toată România prin curier rapid. Timpul de livrare este de 2-5 zile lucrătoare, în funcție de localitate.",
+    q: "Livra\u021Bi \u00een afara Bucure\u0219tiului?",
+    a: "Da, livr\u0103m \u00een toat\u0103 Rom\u00e2nia prin curier rapid. Timpul de livrare este de 2-5 zile lucr\u0103toare, \u00een func\u021Bie de localitate.",
   },
 ];
 
@@ -37,8 +37,8 @@ const FAQPage = () => {
       <div className="container-main max-w-3xl">
         <AnimateOnScroll>
           <span className="font-heading text-xs font-semibold uppercase tracking-wider text-primary">FAQ</span>
-          <h1 className="mt-2 font-heading text-3xl font-bold md:text-4xl">Întrebări frecvente</h1>
-          <p className="mt-3 text-muted-foreground">Răspunsuri la cele mai frecvente întrebări despre produsele și serviciile noastre.</p>
+          <h1 className="mt-2 font-heading text-3xl font-bold md:text-4xl">{"\u00CEntreb\u0103ri frecvente"}</h1>
+          <p className="mt-3 text-muted-foreground">{"R\u0103spunsuri la cele mai frecvente \u00eentreb\u0103ri despre produsele \u0219i serviciile noastre."}</p>
         </AnimateOnScroll>
 
         <div className="mt-10 divide-y divide-border rounded-lg border border-border">
