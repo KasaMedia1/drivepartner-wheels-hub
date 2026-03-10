@@ -101,12 +101,12 @@ export const products: Product[] = [
       { icon: "weight", value: "150 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Motor fără perii de 750W", description: "Motor de ultimă generație care oferă putere imensă și eficiență maximă, combinând viteza cu funcționarea silențioasă. Cuceriți cu ușurință urcările și încărcăturile grele." },
-      { title: "Baterie dublă 15+22.5Ah", description: "Cu o baterie de 15+22.5 Ah, acceptă modul pedalare asistată timp de 150-170 km. Farurile luminează calea înainte, în timp ce furca față ușoară din aluminiu asigură o călătorie sigură." },
-      { title: "Frâne hidraulice pe disc", description: "Echipată standard cu frâne hidraulice pe disc, C29-K oferă o putere de frânare constantă și sigură în toate condițiile de mers. Sistemul hidraulic asigură o modulare lină și precisă a frânării." },
-      { title: "Transmisie Shimano 21 viteze", description: "Dotat cu un sistem de transmisie Shimano cu 21 de viteze și o protecție pentru schimbătorul spate, C29-K asigură o mers lină și fiabilă pe orice tip de teren." },
-      { title: "Display HD 2.4\" cu Bluetooth", description: "Ecran HD de 2,4 inch compatibil cu Bluetooth pentru aplicația Duotts. Monitorizează viteza, distanța, nivelul bateriei și modul de asistență în timp real." },
-      { title: "Componente premium", description: "Cadru din aliaj de aluminiu, ghidon de 68 cm, manivelă de 170 mm, pedale din aliaj de aluminiu și portbagaj spate din oțel cu sarcină maximă de 25 kg." },
+      { title: "Motor fără perii de 750W", description: "Motor de ultimă generație care oferă putere imensă și eficiență maximă, combinând viteza cu funcționarea silențioasă. Cuceriți cu ușurință urcările și încărcăturile grele.", image: featureMotor },
+      { title: "Baterie dublă 15+22.5Ah", description: "Cu o baterie de 15+22.5 Ah, acceptă modul pedalare asistată timp de 150-170 km. Farurile luminează calea înainte, în timp ce furca față ușoară din aluminiu asigură o călătorie sigură.", image: featureBattery },
+      { title: "Frâne hidraulice pe disc", description: "Echipată standard cu frâne hidraulice pe disc, C29-K oferă o putere de frânare constantă și sigură în toate condițiile de mers. Sistemul hidraulic asigură o modulare lină și precisă a frânării.", image: featureBrakes },
+      { title: "Transmisie Shimano 21 viteze", description: "Dotat cu un sistem de transmisie Shimano cu 21 de viteze și o protecție pentru schimbătorul spate, C29-K asigură o mers lină și fiabilă pe orice tip de teren.", image: featureGears },
+      { title: "Display HD 2.4\" cu Bluetooth", description: "Ecran HD de 2,4 inch compatibil cu Bluetooth pentru aplicația Duotts. Monitorizează viteza, distanța, nivelul bateriei și modul de asistență în timp real.", image: featureDisplay },
+      { title: "Componente premium", description: "Cadru din aliaj de aluminiu, ghidon de 68 cm, manivelă de 170 mm, pedale din aliaj de aluminiu și portbagaj spate din oțel cu sarcină maximă de 25 kg.", image: featureFrame },
     ],
     specs: {
       "Motor": "48V 750W Hub Motor",
