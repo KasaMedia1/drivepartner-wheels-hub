@@ -448,7 +448,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "fat-tire",
     image: duottsF26proSilver,
-    gallery: [duottsF26proSilver],
+    gallery: [duottsF26proSilver, featureDualmotor, featureBrakes],
     shortDescription: "Versiunea argintie a e-bike-ului F26 Pro cu dual motor.",
     longDescription: "DUOTTS F26 Pro Silver – aceeași performanță excepțională în finisaj argintiu elegant. Dual motor 750W×2, baterie Samsung 20AH și conectivitate completă.",
     price: Math.round(1399 * EUR),
@@ -463,10 +463,10 @@ export const products: Product[] = [
       { icon: "weight", value: "150 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Dual motor 750W×2", description: "Tracțiune integrală cu două motoare de 750W pentru performanță maximă pe orice suprafață." },
-      { title: "Finisaj argintiu premium", description: "Cadru din aliaj de aluminiu cu finisaj argintiu elegant, combinând estetica cu durabilitatea." },
-      { title: "Baterie Samsung 20AH", description: "Autonomie extinsă de 100-120 km cu celule Samsung de înaltă calitate și fiabilitate dovedită." },
-      { title: "Frâne hidraulice", description: "Sistem de frânare hidraulic pe ambele roți pentru opriri sigure și controlate." },
+      { title: "Dual motor 750W×2", description: "Tracțiune integrală cu două motoare de 750W pentru performanță maximă pe orice suprafață.", image: featureDualmotor },
+      { title: "Finisaj argintiu premium", description: "Cadru din aliaj de aluminiu cu finisaj argintiu elegant, combinând estetica cu durabilitatea.", image: featureFrame },
+      { title: "Baterie Samsung 20AH", description: "Autonomie extinsă de 100-120 km cu celule Samsung de înaltă calitate și fiabilitate dovedită.", image: featureBattery },
+      { title: "Frâne hidraulice", description: "Sistem de frânare hidraulic pe ambele roți pentru opriri sigure și controlate.", image: featureBrakes },
     ],
     specs: {
       "Motor": "Dual 750W×2",
