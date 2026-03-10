@@ -58,7 +58,7 @@ const RentalContactPage = () => {
                 <div>
                   <p className="text-sm font-semibold">Email</p>
                   <p className="text-sm text-muted-foreground">
-                    contact@drivepartner.ro
+                    drive.partner@yahoo.com
                   </p>
                 </div>
               </div>
@@ -67,16 +67,16 @@ const RentalContactPage = () => {
                 <div>
                   <p className="text-sm font-semibold">Telefon</p>
                   <p className="text-sm text-muted-foreground">
-                    +40 723 456 789
+                    +40 728 126 988
                   </p>
                 </div>
               </div>
               <div className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
                 <div>
-                  <p className="text-sm font-semibold">Sediu</p>
+                  <p className="text-sm font-semibold">Locație</p>
                   <p className="text-sm text-muted-foreground">
-                    Str. Bicicletei nr. 42, București
+                    București Sector 3, Calea Vitan Nr. 152
                   </p>
                 </div>
               </div>
@@ -180,7 +180,7 @@ const RentalContactPage = () => {
                       onChange={handleChange}
                       required
                       maxLength={15}
-                      placeholder="0723 456 789"
+                      placeholder="0728 126 988"
                       className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20"
                     />
                   </div>

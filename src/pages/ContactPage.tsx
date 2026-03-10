@@ -23,21 +23,21 @@ const ContactPage = () => {
               <Mail className="mt-0.5 h-5 w-5 text-primary shrink-0" />
               <div>
                 <p className="text-sm font-semibold">Email</p>
-                <p className="text-sm text-muted-foreground">contact@drivepartner.ro</p>
+                <p className="text-sm text-muted-foreground">drive.partner@yahoo.com</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <Phone className="mt-0.5 h-5 w-5 text-primary shrink-0" />
               <div>
                 <p className="text-sm font-semibold">Telefon</p>
-                <p className="text-sm text-muted-foreground">+40 723 456 789</p>
+                <p className="text-sm text-muted-foreground">+40 728 126 988</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
               <MapPin className="mt-0.5 h-5 w-5 text-primary shrink-0" />
               <div>
-                <p className="text-sm font-semibold">Sediu</p>
-                <p className="text-sm text-muted-foreground">Str. Bicicletei nr. 42, București</p>
+                <p className="text-sm font-semibold">Locație</p>
+                <p className="text-sm text-muted-foreground">București Sector 3, Calea Vitan Nr. 152</p>
               </div>
             </div>
           </div>

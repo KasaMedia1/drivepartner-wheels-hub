@@ -41,9 +41,9 @@ const Footer = () => {
           <div>
             <h4 className="font-heading text-sm font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-sm text-muted-foreground">
-              <li>contact@drivepartner.ro</li>
-              <li>+40 723 456 789</li>
-              <li>București, România</li>
+              <li>drive.partner@yahoo.com</li>
+              <li>+40 728 126 988</li>
+              <li>București Sector 3, Calea Vitan Nr. 152</li>
             </ul>
             <div className="mt-4 flex gap-3">
               <a href="#" className="text-muted-foreground transition-colors hover:text-foreground" aria-label="Facebook">FB</a>

@@ -54,7 +54,7 @@ const TermsPage = () => (
           <section>
             <h2 className="font-heading text-lg font-semibold text-foreground mb-3">7. Contact</h2>
             <p>
-              Pentru orice nelămuriri legate de acești termeni, ne poți contacta la contact@drivepartner.ro sau la telefon +40 723 456 789.
+              Pentru orice nelămuriri legate de acești termeni, ne poți contacta la drive.partner@yahoo.com sau la telefon +40 728 126 988.
             </p>
           </section>
         </div>
