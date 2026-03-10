@@ -58,7 +58,7 @@ const RentalContactPage = () => {
                 <div>
                   <p className="text-sm font-semibold">Email</p>
                   <p className="text-sm text-muted-foreground">
-                    contact@drivepartner.ro
+                    drive.partner@yahoo.com
                   </p>
                 </div>
               </div>
