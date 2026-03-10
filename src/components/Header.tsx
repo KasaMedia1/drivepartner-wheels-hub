@@ -2,6 +2,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Search, User, ShoppingCart, Menu, X } from "lucide-react";
 import { useCartStore } from "@/store/cartStore";
 import { useState } from "react";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   const { toggleCart, getItemCount } = useCartStore();
@@ -16,7 +17,7 @@ const Header = () => {
       <div className="container-main flex h-16 items-center justify-between md:h-20">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 font-heading text-lg font-bold tracking-tight md:text-xl">
-          <span className="text-kinetic">●</span>
+          <img src={logo} alt="Drivepartner Bikes" className="h-10 w-auto md:h-12" />
           <span>Drivepartner Bikes</span>
         </Link>
 
