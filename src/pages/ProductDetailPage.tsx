@@ -233,9 +233,9 @@ const ProductDetailPage = () => {
                     <div key={i} className="group">
                       <div className="mb-4 aspect-[4/3] overflow-hidden rounded-lg bg-foreground">
                         <img
-                          src={product.image}
+                          src={f.image || product.image}
                           alt={f.title}
-                          className="h-full w-full object-contain p-6 opacity-80 transition-transform duration-500 group-hover:scale-105 brightness-90 invert"
+                          className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
                         />
                       </div>
                       <h3 className="font-heading text-base font-bold md:text-lg">{f.title}</h3>
