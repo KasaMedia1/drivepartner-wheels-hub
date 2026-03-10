@@ -18,6 +18,24 @@ import duottsE26 from "@/assets/duotts-e26.jpg";
 import duottsF26lite from "@/assets/duotts-f26lite.jpg";
 import duottsS26pro from "@/assets/duotts-s26pro.jpg";
 
+// Feature & lifestyle images
+import featureMotor from "@/assets/features/feature-motor.jpg";
+import featureBattery from "@/assets/features/feature-battery.jpg";
+import featureDisplay from "@/assets/features/feature-display.jpg";
+import featureBrakes from "@/assets/features/feature-brakes.jpg";
+import featureSuspension from "@/assets/features/feature-suspension.jpg";
+import featureFattire from "@/assets/features/feature-fattire.jpg";
+import featureGears from "@/assets/features/feature-gears.jpg";
+import featureFrame from "@/assets/features/feature-frame.jpg";
+import featureDualmotor from "@/assets/features/feature-dualmotor.jpg";
+import featureGps from "@/assets/features/feature-gps.jpg";
+import featureColorchange from "@/assets/features/feature-colorchange.jpg";
+import featureTorquesensor from "@/assets/features/feature-torquesensor.jpg";
+import lifestyleMountain from "@/assets/features/lifestyle-mountain.jpg";
+import lifestyleFattire from "@/assets/features/lifestyle-fattire.jpg";
+import lifestyleRetro from "@/assets/features/lifestyle-retro.jpg";
+import lifestyleTrekking from "@/assets/features/lifestyle-trekking.jpg";
+
 export type ProductType = "cumparare" | "inchiriere";
 export type BikeCategory = "mountain" | "urban" | "pliant" | "road" | "cargo" | "fat-tire" | "trekking" | "retro";
 
