@@ -31,17 +31,25 @@ const RentPage = () => {
   return (
     <>
       {/* Livratori Banner */}
-      <section className="relative overflow-hidden">
-        <img src={livratoriBanner} alt="Devino livrator" className="w-full h-auto block" />
-        <div className="absolute inset-0 flex items-end justify-center pb-6 md:pb-10">
-          <a
-            href="https://www.drivepartner.ro"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="rounded-md bg-primary px-8 py-3.5 font-heading text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
-          >
-            Devino livrator
-          </a>
+      <section className="relative overflow-hidden bg-muted">
+        <div className="container-main flex flex-col md:flex-row items-center">
+          <div className="flex-1 py-10 md:py-16 pr-4">
+            <h2 className="font-heading text-2xl md:text-3xl font-bold">Vrei să devii livrator?</h2>
+            <p className="mt-3 text-muted-foreground max-w-md">
+              DrivePartner te ajută cu tot procesul.
+            </p>
+            <a
+              href="https://www.drivepartner.ro"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="mt-6 inline-block rounded-md bg-primary px-8 py-3.5 font-heading text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+            >
+              Devino livrator
+            </a>
+          </div>
+          <div className="flex-1 flex justify-end">
+            <img src={livratoriBanner} alt="Devino livrator - DrivePartner" className="max-h-[280px] w-auto object-contain" />
+          </div>
         </div>
       </section>
 
