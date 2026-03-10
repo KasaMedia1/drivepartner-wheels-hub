@@ -2,6 +2,7 @@ import { useState, useMemo } from "react";
 import { getProductsByType, type BikeCategory } from "@/data/products";
 import ProductCard from "@/components/ProductCard";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
+import livratoriBanner from "@/assets/livratori-banner.png";
 
 const categories: { value: BikeCategory | "all"; label: string }[] = [
   { value: "all", label: "Toate" },
