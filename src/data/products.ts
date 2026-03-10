@@ -155,10 +155,10 @@ export const products: Product[] = [
       { icon: "weight", value: "120 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Motor de 750W fără perii", description: "Motor hub puternic de 750W care oferă accelerare lină și putere suficientă pentru orice urcuș. Funcționare silențioasă și eficiență energetică de top." },
-      { title: "Shimano 21 de viteze", description: "Transmisie Shimano completă cu 21 de viteze pentru adaptare perfectă la orice tip de teren, de la urcări abrupte la drumuri plate." },
-      { title: "Conectivitate Bluetooth & APP", description: "Monitorizează toate datele călătoriei prin aplicația DUOTTS: viteză, distanță, nivel baterie, calorii arse și multe altele." },
-      { title: "Suspensie frontală cu blocare", description: "Furcă de suspensie din aluminiu cu cursă generoasă și opțiune de blocare pentru drumuri netede." },
+      { title: "Motor de 750W fără perii", description: "Motor hub puternic de 750W care oferă accelerare lină și putere suficientă pentru orice urcuș. Funcționare silențioasă și eficiență energetică de top.", image: featureMotor },
+      { title: "Shimano 21 de viteze", description: "Transmisie Shimano completă cu 21 de viteze pentru adaptare perfectă la orice tip de teren, de la urcări abrupte la drumuri plate.", image: featureGears },
+      { title: "Conectivitate Bluetooth & APP", description: "Monitorizează toate datele călătoriei prin aplicația DUOTTS: viteză, distanță, nivel baterie, calorii arse și multe altele.", image: featureDisplay },
+      { title: "Suspensie frontală cu blocare", description: "Furcă de suspensie din aluminiu cu cursă generoasă și opțiune de blocare pentru drumuri netede.", image: featureSuspension },
     ],
     specs: {
       "Motor": "750W 48V Hub Motor",
