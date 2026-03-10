@@ -717,7 +717,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "fat-tire",
     image: duottsS26pro,
-    gallery: [duottsS26pro, lifestyleFattire, featureSuspension],
+    gallery: [duottsS26pro, lifestyleFattire, s26proSuspension],
     shortDescription: "E-bike dual motor 750W×2 cu suspensie completă și Bluetooth.",
     longDescription: "DUOTTS S26 Pro este echipat cu două motoare de 750W, baterie Samsung 20AH, suspensie față și spate și conectivitate Bluetooth cu aplicație dedicată.",
     price: Math.round(1399 * EUR),
@@ -732,10 +732,10 @@ export const products: Product[] = [
       { icon: "weight", value: "150 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Dual motor 750W×2", description: "Tracțiune integrală cu două motoare puternice de 750W pentru performanță maximă pe orice teren.", image: featureDualmotor },
-      { title: "Suspensie completă față-spate", description: "Sistem de amortizare complet pentru un confort excepțional și control sporit pe trasee tehnice.", image: featureSuspension },
-      { title: "Baterie Samsung 20AH", description: "Celule Samsung de înaltă calitate pentru autonomie extinsă și fiabilitate pe termen lung.", image: featureBattery },
-      { title: "Conectivitate Bluetooth & APP", description: "Monitorizare completă prin aplicația DUOTTS cu date în timp real despre performanță și baterie.", image: featureDisplay },
+      { title: "Dual motor 750W×2", description: "Tracțiune integrală cu două motoare puternice de 750W pentru performanță maximă pe orice teren.", image: s26proMotor },
+      { title: "Suspensie completă față-spate", description: "Sistem de amortizare complet pentru un confort excepțional și control sporit pe trasee tehnice.", image: s26proSuspension },
+      { title: "Baterie Samsung 20AH", description: "Celule Samsung de înaltă calitate pentru autonomie extinsă și fiabilitate pe termen lung.", image: s26proBattery },
+      { title: "Conectivitate Bluetooth & APP", description: "Monitorizare completă prin aplicația DUOTTS cu date în timp real despre performanță și baterie.", image: s26proDisplay },
     ],
     specs: {
       "Motor": "Dual 750W×2",
