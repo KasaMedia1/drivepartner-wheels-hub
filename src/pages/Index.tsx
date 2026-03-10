@@ -45,9 +45,6 @@ const Index = () => {
 
         <div className="container-main relative z-10 py-16">
           <div className="max-w-xl">
-            <span className="inline-block rounded-full bg-primary/20 px-4 py-1.5 font-heading text-xs font-semibold tracking-wider text-primary-foreground">
-              DRIVEPARTNER BIKES
-            </span>
             <h1 className="mt-6 font-heading text-4xl font-extrabold leading-[1.1] text-primary-foreground md:text-5xl lg:text-6xl">
               Biciclete premium pentru fiecare drum
             </h1>
