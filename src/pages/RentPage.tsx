@@ -32,16 +32,16 @@ const RentPage = () => {
     <>
       {/* Livratori Banner */}
       <section className="text-center">
-        <div className="bg-muted py-6 md:py-8">
+        <div className="bg-muted pt-6 pb-3 md:pt-8 md:pb-4">
           <div className="container-main">
             <h2 className="font-heading text-2xl md:text-4xl font-bold">Vrei să devii livrator?</h2>
-            <p className="mt-2 text-muted-foreground text-sm md:text-base">
+            <p className="mt-1 text-muted-foreground text-sm md:text-base">
               DrivePartner te ajută cu tot procesul.
             </p>
           </div>
         </div>
         <img src={livratoriBanner} alt="Devino livrator - DrivePartner" className="w-full h-auto block" />
-        <div className="bg-muted py-6 md:py-8">
+        <div className="bg-muted pt-3 pb-6 md:pt-4 md:pb-8">
           <a
             href="https://www.drivepartner.ro"
             target="_blank"
