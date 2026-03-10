@@ -29,8 +29,32 @@ const RentPage = () => {
   }, [category, sort, availableOnly]);
 
   return (
-    <div className="py-12 md:py-20">
-      <div className="container-main">
+    <>
+      {/* Livratori Banner */}
+      <section className="relative overflow-hidden flex items-center justify-center py-12 md:py-16"
+        style={{
+          backgroundImage: `url(${livratoriBanner})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-foreground/30" />
+        <div className="relative z-10 text-center">
+          <h2 className="font-heading text-2xl font-extrabold text-primary-foreground md:text-4xl">
+            Vrei să devii livrator?
+          </h2>
+          <a
+            href="https://www.drivepartner.ro"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-6 inline-block rounded-md bg-primary px-8 py-3.5 font-heading text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+          >
+            Devino livrator
+          </a>
+        </div>
+      </section>
+
+      <div className="py-12 md:py-20">
         <AnimateOnScroll>
           <div className="mb-10">
             <span className="font-heading text-xs font-semibold uppercase tracking-wider text-secondary">Închiriere</span>
