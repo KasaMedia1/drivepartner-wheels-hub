@@ -140,7 +140,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "mountain",
     image: duottsC29pro,
-    gallery: [duottsC29pro],
+    gallery: [duottsC29pro, lifestyleMountain, featureBattery],
     shortDescription: "E-bike mountain 29\" cu Shimano 21 viteze și conectivitate Bluetooth.",
     longDescription: "DUOTTS C29 Pro combină performanța unui motor de 750W cu transmisia Shimano 21 de viteze pentru control total pe orice teren. Cu Bluetooth și aplicație dedicată, monitorizezi fiecare aspect al călătoriei.",
     price: Math.round(849 * EUR),
