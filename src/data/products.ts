@@ -189,7 +189,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "mountain",
     image: duottsC29pro,
-    gallery: [duottsC29pro, lifestyleMountain, featureBattery],
+    gallery: [duottsC29pro, lifestyleMountain, c29proMotor],
     shortDescription: "E-bike mountain 29\" cu Shimano 21 viteze și conectivitate Bluetooth.",
     longDescription: "DUOTTS C29 Pro combină performanța unui motor de 750W cu transmisia Shimano 21 de viteze pentru control total pe orice teren. Cu Bluetooth și aplicație dedicată, monitorizezi fiecare aspect al călătoriei.",
     price: Math.round(849 * EUR),
@@ -204,10 +204,10 @@ export const products: Product[] = [
       { icon: "weight", value: "120 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Motor de 750W fără perii", description: "Motor hub puternic de 750W care oferă accelerare lină și putere suficientă pentru orice urcuș. Funcționare silențioasă și eficiență energetică de top.", image: featureMotor },
-      { title: "Shimano 21 de viteze", description: "Transmisie Shimano completă cu 21 de viteze pentru adaptare perfectă la orice tip de teren, de la urcări abrupte la drumuri plate.", image: featureGears },
-      { title: "Conectivitate Bluetooth & APP", description: "Monitorizează toate datele călătoriei prin aplicația DUOTTS: viteză, distanță, nivel baterie, calorii arse și multe altele.", image: featureDisplay },
-      { title: "Suspensie frontală cu blocare", description: "Furcă de suspensie din aluminiu cu cursă generoasă și opțiune de blocare pentru drumuri netede.", image: featureSuspension },
+      { title: "Motor de 750W fără perii", description: "Motor hub puternic de 750W care oferă accelerare lină și putere suficientă pentru orice urcuș. Funcționare silențioasă și eficiență energetică de top.", image: c29proMotor },
+      { title: "Shimano 21 de viteze", description: "Transmisie Shimano completă cu 21 de viteze pentru adaptare perfectă la orice tip de teren, de la urcări abrupte la drumuri plate.", image: c29proGears },
+      { title: "Conectivitate Bluetooth & APP", description: "Monitorizează toate datele călătoriei prin aplicația DUOTTS: viteză, distanță, nivel baterie, calorii arse și multe altele.", image: c29proDisplay },
+      { title: "Suspensie frontală cu blocare", description: "Furcă de suspensie din aluminiu cu cursă generoasă și opțiune de blocare pentru drumuri netede.", image: c29proSuspension },
     ],
     specs: {
       "Motor": "750W 48V Hub Motor",
