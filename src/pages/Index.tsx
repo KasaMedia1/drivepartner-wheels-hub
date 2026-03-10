@@ -124,23 +124,17 @@ const Index = () => {
               <div>
                 <span className="font-heading text-xs font-semibold uppercase tracking-wider text-muted-foreground">Review</span>
                 <h2 className="mt-2 font-heading text-2xl font-bold md:text-3xl">
-                  Drivepartner Trail X
+                  Bicicleta electrică DUOTTS F20
                 </h2>
                 <p className="mt-4 text-muted-foreground leading-relaxed">
-                  Vezi cum se comportă Drivepartner Trail X în situații reale. Un e-MTB creat pentru performanță pe trasee montane exigente, testat în cele mai dificile condiții.
+                  Bicicleta electrică retro combină inteligent designul vintage al bicicletelor clasice de pistă cu cea mai avansată tehnologie de biciclete electrice, creând o operă de artă mobilă. Vezi review complet!
                 </p>
-                <Link
-                  to="/cumpara/drivepartner-trail-x"
-                  className="mt-6 inline-block text-sm font-medium text-primary underline-offset-4 hover:underline"
-                >
-                  Vezi produsul →
-                </Link>
               </div>
               <div className="aspect-video overflow-hidden rounded-lg bg-accent">
                 <iframe
                   className="h-full w-full"
-                  src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-                  title="Review Drivepartner Trail X"
+                  src="https://www.youtube.com/embed/UIyS0rmY9ig"
+                  title="Review Bicicleta electrică DUOTTS F20"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 />
