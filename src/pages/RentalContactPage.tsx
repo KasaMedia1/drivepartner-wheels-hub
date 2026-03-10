@@ -74,9 +74,9 @@ const RentalContactPage = () => {
               <div className="flex items-start gap-3">
                 <MapPin className="mt-0.5 h-5 w-5 shrink-0 text-primary" />
                 <div>
-                  <p className="text-sm font-semibold">Sediu</p>
+                  <p className="text-sm font-semibold">Locație</p>
                   <p className="text-sm text-muted-foreground">
-                    Str. Bicicletei nr. 42, București
+                    București Sector 3, Calea Vitan Nr. 152
                   </p>
                 </div>
               </div>
