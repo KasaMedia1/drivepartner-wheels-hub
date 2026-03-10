@@ -23,7 +23,7 @@ const ContactPage = () => {
               <Mail className="mt-0.5 h-5 w-5 text-primary shrink-0" />
               <div>
                 <p className="text-sm font-semibold">Email</p>
-                <p className="text-sm text-muted-foreground">contact@drivepartner.ro</p>
+                <p className="text-sm text-muted-foreground">drive.partner@yahoo.com</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
