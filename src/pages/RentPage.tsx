@@ -32,7 +32,7 @@ const RentPage = () => {
     <>
       {/* Livratori Banner */}
       <section className="text-center">
-        <div className="bg-muted pt-6 pb-3 md:pt-8 md:pb-4">
+        <div className="bg-muted pt-4 pb-1 md:pt-6 md:pb-2">
           <div className="container-main">
             <h2 className="font-heading text-2xl md:text-4xl font-bold">Vrei să devii livrator?</h2>
             <p className="mt-1 text-muted-foreground text-sm md:text-base">
@@ -41,7 +41,7 @@ const RentPage = () => {
           </div>
         </div>
         <img src={livratoriBanner} alt="Devino livrator - DrivePartner" className="w-full h-auto block" />
-        <div className="bg-muted pt-3 pb-6 md:pt-4 md:pb-8">
+        <div className="bg-muted pt-1 pb-4 md:pt-2 md:pb-6">
           <a
             href="https://www.drivepartner.ro"
             target="_blank"
