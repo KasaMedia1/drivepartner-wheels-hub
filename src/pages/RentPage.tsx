@@ -31,22 +31,21 @@ const RentPage = () => {
   return (
     <>
       {/* Livratori Banner */}
-      <section className="text-center">
-        <div className="bg-muted pt-4 pb-1 md:pt-6 md:pb-2">
-          <div className="container-main">
-            <h2 className="font-heading text-2xl md:text-4xl font-bold">Vrei să devii livrator?</h2>
-            <p className="mt-1 text-muted-foreground text-sm md:text-base">
-              DrivePartner te ajută cu tot procesul.
-            </p>
-          </div>
-        </div>
-        <img src={livratoriBanner} alt="Devino livrator - DrivePartner" className="w-full h-auto block" />
-        <div className="bg-muted pt-1 pb-4 md:pt-2 md:pb-6">
+      <section
+        className="relative overflow-hidden min-h-[300px] md:min-h-[400px] flex items-center bg-cover bg-center"
+        style={{ backgroundImage: `url(${livratoriBanner})` }}
+      >
+        <div className="absolute inset-0 bg-foreground/40" />
+        <div className="container-main relative z-10 py-12 md:py-16 text-center">
+          <h2 className="font-heading text-2xl md:text-4xl font-bold text-primary-foreground">Vrei să devii livrator?</h2>
+          <p className="mt-3 text-primary-foreground/90 text-sm md:text-base max-w-md mx-auto">
+            DrivePartner te ajută cu tot procesul.
+          </p>
           <a
             href="https://www.drivepartner.ro"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block rounded-md bg-primary px-8 py-3.5 font-heading text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+            className="mt-6 inline-block rounded-md bg-primary px-8 py-3.5 font-heading text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
           >
             Devino livrator
           </a>
