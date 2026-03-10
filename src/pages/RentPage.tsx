@@ -1,118 +1,189 @@
-import { useState, useMemo } from "react";
-import { getProductsByType, type BikeCategory } from "@/data/products";
-import ProductCard from "@/components/ProductCard";
+import { useRef } from "react";
+import { Link } from "react-router-dom";
+import { getProductsByType } from "@/data/products";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import livratoriBanner from "@/assets/livratori-banner.png";
+import duottsF20_1 from "@/assets/duotts-f20-1.jpg";
+import { ChevronLeft, ChevronRight, Truck, Clock, Award, Phone } from "lucide-react";
 
-const categories: { value: BikeCategory | "all"; label: string }[] = [
-  { value: "all", label: "Toate" },
-  { value: "mountain", label: "Mountain" },
-  { value: "urban", label: "Urban" },
-  { value: "fat-tire", label: "Fat Tire" },
-];
+const allBuyProducts = getProductsByType("cumparare");
 
-type SortOption = "recomandate" | "pret-asc" | "pret-desc";
+const rentalModels = allBuyProducts.map((p) => ({
+  name: p.name,
+  image: p.image,
+  pricePerWeek: 200,
+  slug: p.slug,
+}));
 
 const RentPage = () => {
-  const allProducts = getProductsByType("inchiriere");
-  const [category, setCategory] = useState<BikeCategory | "all">("all");
-  const [sort, setSort] = useState<SortOption>("recomandate");
-  const [availableOnly, setAvailableOnly] = useState(false);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
-  const filtered = useMemo(() => {
-    let result = [...allProducts];
-    if (category !== "all") result = result.filter((p) => p.category === category);
-    if (availableOnly) result = result.filter((p) => p.available);
-    if (sort === "pret-asc") result.sort((a, b) => (a.pricePerDay ?? 0) - (b.pricePerDay ?? 0));
-    if (sort === "pret-desc") result.sort((a, b) => (b.pricePerDay ?? 0) - (a.pricePerDay ?? 0));
-    return result;
-  }, [category, sort, availableOnly]);
+  const scroll = (dir: "left" | "right") => {
+    if (!scrollRef.current) return;
+    const amount = 320;
+    scrollRef.current.scrollBy({ left: dir === "left" ? -amount : amount, behavior: "smooth" });
+  };
 
   return (
     <>
-      {/* Livratori Banner */}
-      <section
-        className="relative overflow-hidden min-h-[300px] md:min-h-[400px] flex items-center bg-cover bg-center"
-        style={{ backgroundImage: `url(${livratoriBanner})` }}
-      >
-        <div className="absolute inset-0 bg-foreground/40" />
-        <div className="container-main relative z-10 py-12 md:py-16 text-center">
-          <h2 className="font-heading text-2xl md:text-4xl font-bold text-primary-foreground">Vrei să devii livrator?</h2>
-          <p className="mt-3 text-primary-foreground/90 text-sm md:text-base max-w-md mx-auto">
-            DrivePartner te ajută cu tot procesul.
-          </p>
-          <a
-            href="https://www.drivepartner.ro"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mt-6 inline-block rounded-md bg-primary px-8 py-3.5 font-heading text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
-          >
-            Devino livrator
-          </a>
+      {/* ═══ HERO — Livratori + F20 Offer ═══ */}
+      <section className="relative overflow-hidden bg-foreground">
+        <div className="container-main relative z-10 grid items-center gap-8 py-16 md:py-24 lg:grid-cols-2">
+          {/* Left — Text */}
+          <div className="text-primary-foreground">
+            <span className="inline-block rounded-full bg-primary/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
+              Program livratori
+            </span>
+            <h1 className="mt-5 font-heading text-3xl font-bold leading-tight md:text-4xl lg:text-5xl">
+              Vrei să devii livrator?
+            </h1>
+            <p className="mt-4 text-base text-primary-foreground/80 md:text-lg">
+              DrivePartner te ajută cu tot procesul.
+            </p>
+
+            {/* F20 Offer Card */}
+            <div className="mt-8 rounded-xl border border-primary-foreground/10 bg-primary-foreground/5 p-6 backdrop-blur-sm">
+              <div className="flex items-center gap-2 text-primary">
+                <Award className="h-5 w-5" />
+                <span className="font-heading text-sm font-bold uppercase tracking-wider">Ofertă specială</span>
+              </div>
+              <h3 className="mt-3 font-heading text-xl font-bold text-primary-foreground md:text-2xl">
+                DUOTTS F20 — <span className="text-primary">400 RON/săptămână</span>
+              </h3>
+              <div className="mt-4 space-y-2">
+                <div className="flex items-start gap-2.5 text-sm text-primary-foreground/80">
+                  <Truck className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                  <span>Bicicletă electrică retro cu motor 1000W, ideală pentru livrări</span>
+                </div>
+                <div className="flex items-start gap-2.5 text-sm text-primary-foreground/80">
+                  <Clock className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                  <span>După <strong className="text-primary-foreground">7 luni</strong> de închiriere, bicicleta devine a ta!</span>
+                </div>
+              </div>
+              <div className="mt-6 flex flex-wrap gap-3">
+                <a
+                  href="https://www.drivepartner.ro"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-md bg-primary px-6 py-3 font-heading text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+                >
+                  Devino livrator
+                </a>
+                <Link
+                  to="/contact-inchiriere"
+                  className="rounded-md border border-primary-foreground/20 px-6 py-3 font-heading text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary-foreground/10"
+                >
+                  Contactează-ne
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* Right — Image */}
+          <div className="flex justify-center lg:justify-end">
+            <img
+              src={duottsF20_1}
+              alt="DUOTTS F20 — Bicicletă pentru livratori"
+              className="max-h-[500px] w-auto rounded-lg object-contain drop-shadow-2xl"
+            />
+          </div>
         </div>
       </section>
 
-      <div className="py-12 md:py-20">
+      {/* ═══ Benefits Bar ═══ */}
+      <div className="border-b border-border bg-card py-8">
+        <div className="container-main grid grid-cols-2 gap-6 md:grid-cols-4">
+          {[
+            { icon: "🚲", title: "Biciclete premium", desc: "Modele DUOTTS de top" },
+            { icon: "💰", title: "De la 200 RON/săpt", desc: "Prețuri accesibile" },
+            { icon: "🔑", title: "Rent-to-Own", desc: "Devine a ta după 7 luni" },
+            { icon: "🛠️", title: "Service inclus", desc: "Mentenanță gratuită" },
+          ].map((b, i) => (
+            <div key={i} className="flex items-start gap-3">
+              <span className="text-2xl">{b.icon}</span>
+              <div>
+                <p className="font-heading text-sm font-bold">{b.title}</p>
+                <p className="text-xs text-muted-foreground">{b.desc}</p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      {/* ═══ All Models Carousel ═══ */}
+      <section className="py-16 md:py-24">
         <div className="container-main">
           <AnimateOnScroll>
-            <div className="mb-10">
-              <span className="font-heading text-xs font-semibold uppercase tracking-wider text-secondary">Închiriere</span>
-              <h1 className="mt-2 font-heading text-3xl font-bold md:text-4xl">Închiriază biciclete</h1>
-              <p className="mt-3 max-w-xl text-muted-foreground">
-                Închiriază o bicicletă electrică premium pentru o zi, un weekend sau o vacanță întreagă. Toate modelele includ echipament complet.
-              </p>
+            <div className="mb-10 flex items-end justify-between">
+              <div>
+                <span className="font-heading text-xs font-semibold uppercase tracking-wider text-secondary">
+                  Închiriere
+                </span>
+                <h2 className="mt-2 font-heading text-2xl font-bold md:text-3xl">
+                  Toate modelele disponibile
+                </h2>
+                <p className="mt-2 max-w-lg text-sm text-muted-foreground">
+                  Alege bicicleta electrică potrivită pentru tine. Prețuri de la 200 RON/săptămână cu opțiunea rent-to-own.
+                </p>
+              </div>
+              <div className="hidden gap-2 md:flex">
+                <button
+                  onClick={() => scroll("left")}
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-border transition-colors hover:bg-accent"
+                >
+                  <ChevronLeft className="h-5 w-5" />
+                </button>
+                <button
+                  onClick={() => scroll("right")}
+                  className="flex h-10 w-10 items-center justify-center rounded-full border border-border transition-colors hover:bg-accent"
+                >
+                  <ChevronRight className="h-5 w-5" />
+                </button>
+              </div>
             </div>
           </AnimateOnScroll>
 
-          {/* Filters */}
-          <div className="mb-8 flex flex-wrap items-center gap-3">
-            <div className="flex flex-wrap gap-1.5">
-              {categories.map((c) => (
-                <button
-                  key={c.value}
-                  onClick={() => setCategory(c.value)}
-                  className={`rounded-md px-3 py-1.5 text-xs font-medium transition-colors ${
-                    category === c.value
-                      ? "bg-secondary text-secondary-foreground"
-                      : "bg-accent text-foreground hover:bg-border"
-                  }`}
-                >
-                  {c.label}
-                </button>
-              ))}
-            </div>
-            <div className="ml-auto flex items-center gap-3">
-              <label className="flex items-center gap-2 text-xs text-muted-foreground">
-                <input
-                  type="checkbox"
-                  checked={availableOnly}
-                  onChange={(e) => setAvailableOnly(e.target.checked)}
-                  className="rounded"
-                />
-                Doar disponibile
-              </label>
-              <select
-                value={sort}
-                onChange={(e) => setSort(e.target.value as SortOption)}
-                className="rounded-md border border-border bg-card px-3 py-1.5 text-xs"
+          {/* Scrollable cards */}
+          <div
+            ref={scrollRef}
+            className="flex gap-5 overflow-x-auto pb-4 scrollbar-hide snap-x snap-mandatory"
+            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+          >
+            {rentalModels.map((model, i) => (
+              <div
+                key={i}
+                className="group flex w-[280px] shrink-0 snap-start flex-col overflow-hidden rounded-lg border border-border bg-card transition-shadow hover:shadow-lg"
               >
-                <option value="recomandate">Recomandate</option>
-                <option value="pret-asc">Preț crescător</option>
-                <option value="pret-desc">Preț descrescător</option>
-              </select>
-            </div>
-          </div>
-
-          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            {filtered.map((p) => (
-              <ProductCard key={p.id} product={p} />
+                <div className="aspect-square overflow-hidden bg-accent">
+                  <img
+                    src={model.image}
+                    alt={model.name}
+                    className="h-full w-full object-contain p-6 transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
+                  />
+                </div>
+                <div className="flex flex-1 flex-col p-4">
+                  <h3 className="font-heading text-sm font-semibold">{model.name}</h3>
+                  <div className="mt-2 flex items-baseline gap-1">
+                    <span className="font-heading text-lg font-bold text-primary">de la 200 RON</span>
+                    <span className="text-xs text-muted-foreground">/săptămână</span>
+                  </div>
+                  <p className="mt-1.5 text-[11px] text-muted-foreground">
+                    Rent-to-own disponibil după 7 luni
+                  </p>
+                  <Link
+                    to="/contact-inchiriere"
+                    className="mt-4 flex items-center justify-center gap-1.5 rounded-md bg-secondary py-2.5 text-xs font-semibold text-secondary-foreground transition-colors hover:bg-secondary/90"
+                  >
+                    <Phone className="h-3.5 w-3.5" />
+                    Contactează-ne
+                  </Link>
+                </div>
+              </div>
             ))}
           </div>
-          {filtered.length === 0 && (
-            <p className="py-20 text-center text-muted-foreground">Nu am găsit produse cu filtrele selectate.</p>
-          )}
         </div>
-      </div>
+      </section>
     </>
   );
 };
