@@ -408,7 +408,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "fat-tire",
     image: duottsN26red,
-    gallery: [duottsN26red, lifestyleFattire, featureGps],
+    gallery: [duottsN26red, lifestyleFattire, n26redGps],
     shortDescription: "Versiunea roșie a e-bike-ului dual motor N26 cu GPS tracking.",
     longDescription: "DUOTTS N26 Red – aceeași putere extremă în versiunea roșie. Dual motor 750W×2, baterie Samsung 20AH, display 4G LCD cu tracking real-time și sistem anti-furt inteligent.",
     price: Math.round(1399 * EUR),
@@ -423,10 +423,10 @@ export const products: Product[] = [
       { icon: "weight", value: "150 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Dual motor 750W×2", description: "Două motoare independente de 750W pentru tracțiune integrală și putere neegalată pe orice suprafață.", image: featureDualmotor },
-      { title: "Baterie Samsung 20AH", description: "Celule premium Samsung pentru autonomie extinsă de 100-120 km și durabilitate pe termen lung.", image: featureBattery },
-      { title: "GPS tracking & anti-furt", description: "Sistem integrat de localizare GPS și protecție anti-furt cu alerte în timp real pe telefon.", image: featureGps },
-      { title: "Design roșu premium", description: "Finisaj roșu vibrant pe cadru din aliaj de aluminiu, pentru o prezență vizuală puternică.", image: featureFrame },
+      { title: "Dual motor 750W×2", description: "Două motoare independente de 750W pentru tracțiune integrală și putere neegalată pe orice suprafață.", image: n26redMotor },
+      { title: "Baterie Samsung 20AH", description: "Celule premium Samsung pentru autonomie extinsă de 100-120 km și durabilitate pe termen lung.", image: n26redBattery },
+      { title: "GPS tracking & anti-furt", description: "Sistem integrat de localizare GPS și protecție anti-furt cu alerte în timp real pe telefon.", image: n26redGps },
+      { title: "Design roșu premium", description: "Finisaj roșu vibrant pe cadru din aliaj de aluminiu, pentru o prezență vizuală puternică.", image: n26redFrame },
     ],
     specs: {
       "Motor": "Dual 750W×2",
