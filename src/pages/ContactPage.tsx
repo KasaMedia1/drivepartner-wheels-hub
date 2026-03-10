@@ -30,7 +30,7 @@ const ContactPage = () => {
               <Phone className="mt-0.5 h-5 w-5 text-primary shrink-0" />
               <div>
                 <p className="text-sm font-semibold">Telefon</p>
-                <p className="text-sm text-muted-foreground">+40 723 456 789</p>
+                <p className="text-sm text-muted-foreground">+40 728 126 988</p>
               </div>
             </div>
             <div className="flex items-start gap-3">
