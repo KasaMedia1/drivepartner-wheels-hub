@@ -1,28 +1,57 @@
 import { Link } from "react-router-dom";
-import heroImg from "@/assets/hero-bike.png";
+import { useState, useEffect } from "react";
+import heroBg1 from "@/assets/hero-bg-1.png";
+import heroBg2 from "@/assets/hero-bg-2.png";
+import heroBg3 from "@/assets/hero-bg-3.png";
 import { getProductsByType } from "@/data/products";
 import { reviews } from "@/data/reviews";
 import ProductCard from "@/components/ProductCard";
 import ReviewCard from "@/components/ReviewCard";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 
+const heroImages = [heroBg1, heroBg2, heroBg3];
+
 const Index = () => {
   const buyProducts = getProductsByType("cumparare").slice(0, 3);
   const rentProducts = getProductsByType("inchiriere").slice(0, 3);
+  const [currentImg, setCurrentImg] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImg((prev) => (prev + 1) % heroImages.length);
+    }, 5000);
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <>
       {/* HERO */}
-      <section className="relative overflow-hidden bg-card">
-        <div className="container-main grid min-h-[85vh] items-center gap-8 py-16 lg:grid-cols-2">
+      <section className="relative overflow-hidden min-h-[85vh] flex items-center">
+        {/* Background images */}
+        {heroImages.map((img, i) => (
+          <div
+            key={i}
+            className="absolute inset-0 transition-opacity duration-1000 ease-in-out"
+            style={{
+              opacity: currentImg === i ? 1 : 0,
+              backgroundImage: `url(${img})`,
+              backgroundSize: "cover",
+              backgroundPosition: "center",
+            }}
+          />
+        ))}
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-foreground/60" />
+
+        <div className="container-main relative z-10 py-16">
           <div className="max-w-xl">
-            <span className="inline-block rounded-full bg-accent px-4 py-1.5 font-heading text-xs font-semibold tracking-wider text-muted-foreground">
+            <span className="inline-block rounded-full bg-primary/20 px-4 py-1.5 font-heading text-xs font-semibold tracking-wider text-primary-foreground">
               DRIVEPARTNER BIKES
             </span>
-            <h1 className="mt-6 font-heading text-4xl font-extrabold leading-[1.1] md:text-5xl lg:text-6xl">
+            <h1 className="mt-6 font-heading text-4xl font-extrabold leading-[1.1] text-primary-foreground md:text-5xl lg:text-6xl">
               Biciclete premium pentru fiecare drum
             </h1>
-            <p className="mt-5 text-base leading-relaxed text-muted-foreground md:text-lg">
+            <p className="mt-5 text-base leading-relaxed text-primary-foreground/80 md:text-lg">
               Alege să cumperi sau să închiriezi modelul potrivit pentru oraș, aventură sau mobilitate de zi cu zi.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
@@ -39,13 +68,6 @@ const Index = () => {
                 Descoperă ofertele de închiriere
               </Link>
             </div>
-          </div>
-          <div className="relative flex items-center justify-center">
-            <img
-              src={heroImg}
-              alt="Drivepartner Bikes - Bicicletă premium"
-              className="w-full max-w-2xl object-contain"
-            />
           </div>
         </div>
       </section>
