@@ -13,6 +13,7 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import FAQPage from "./pages/FAQPage";
 import TermsPage from "./pages/TermsPage";
+import RentalContactPage from "./pages/RentalContactPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,6 +36,7 @@ const App = () => (
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/faq" element={<FAQPage />} />
             <Route path="/termeni" element={<TermsPage />} />
+            <Route path="/contact-inchiriere" element={<RentalContactPage />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
         </Layout>
