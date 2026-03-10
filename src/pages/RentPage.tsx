@@ -2,9 +2,8 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { getProductsByType } from "@/data/products";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
-import duottsF20_1 from "@/assets/duotts-f20-1.jpg";
+import duottsF20Hero from "@/assets/duotts-f20-hero.png";
 import livratoriHeroBg from "@/assets/livratori-hero-bg.jpg";
-import logo from "@/assets/logo.png";
 import { ChevronLeft, ChevronRight, Truck, Clock, Award, Phone, MessageCircle } from "lucide-react";
 
 const allBuyProducts = getProductsByType("cumparare");
