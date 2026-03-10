@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import heroBg1 from "@/assets/hero-bg-1.png";
+import livratoriBg from "@/assets/livratori-bg.png";
 import heroBg2 from "@/assets/hero-bg-2.png";
 import heroBg3 from "@/assets/hero-bg-3.png";
 import { getProductsByType } from "@/data/products";
