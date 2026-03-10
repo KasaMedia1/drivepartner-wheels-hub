@@ -1,5 +1,5 @@
-import { useState } from "react";
-import { Link } from "react-router-dom";
+import { useState, useEffect } from "react";
+import { Link, useSearchParams } from "react-router-dom";
 import { getProductsByType } from "@/data/products";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
 import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react";
@@ -7,6 +7,7 @@ import { Mail, Phone, MapPin, Send, CheckCircle } from "lucide-react";
 const allProducts = getProductsByType("cumparare");
 
 const RentalContactPage = () => {
+  const [searchParams] = useSearchParams();
   const [sent, setSent] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
@@ -15,10 +16,25 @@ const RentalContactPage = () => {
     email: "",
     vehicle: "",
     option: "",
+    message: "",
   });
 
+  // Pre-fill from cart query params
+  useEffect(() => {
+    const cartProducts = searchParams.get("produse");
+    const cartOption = searchParams.get("optiune");
+    if (cartProducts || cartOption) {
+      setFormData((prev) => ({
+        ...prev,
+        vehicle: cartProducts || prev.vehicle,
+        option: cartOption || prev.option,
+        message: cartProducts ? `Produse din coș: ${cartProducts}` : prev.message,
+      }));
+    }
+  }, [searchParams]);
+
   const handleChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
+    e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement | HTMLTextAreaElement>
   ) => {
     setFormData((prev) => ({ ...prev, [e.target.name]: e.target.value }));
   };
@@ -255,6 +271,22 @@ const RentalContactPage = () => {
                     </label>
                   </div>
                 </div>
+
+                {/* Message (pre-filled with cart items) */}
+                {formData.message && (
+                  <div>
+                    <label className="mb-1.5 block text-xs font-medium text-muted-foreground">
+                      Detalii suplimentare
+                    </label>
+                    <textarea
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      rows={3}
+                      className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20"
+                    />
+                  </div>
+                )}
 
                 {/* Submit */}
                 <button

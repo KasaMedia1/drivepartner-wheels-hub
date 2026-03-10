@@ -2,9 +2,10 @@ import { useRef } from "react";
 import { Link } from "react-router-dom";
 import { getProductsByType } from "@/data/products";
 import AnimateOnScroll from "@/components/AnimateOnScroll";
-import livratoriBanner from "@/assets/livratori-banner.png";
 import duottsF20_1 from "@/assets/duotts-f20-1.jpg";
-import { ChevronLeft, ChevronRight, Truck, Clock, Award, Phone } from "lucide-react";
+import livratoriHeroBg from "@/assets/livratori-hero-bg.jpg";
+import logo from "@/assets/logo.png";
+import { ChevronLeft, ChevronRight, Truck, Clock, Award, Phone, MessageCircle } from "lucide-react";
 
 const allBuyProducts = getProductsByType("cumparare");
 
@@ -27,8 +28,14 @@ const RentPage = () => {
   return (
     <>
       {/* ═══ HERO — Livratori + F20 Offer ═══ */}
-      <section className="relative overflow-hidden bg-foreground">
-        <div className="container-main relative z-10 grid items-center gap-8 py-16 md:py-24 lg:grid-cols-2">
+      <section className="relative overflow-hidden">
+        {/* Background image */}
+        <div className="absolute inset-0">
+          <img src={livratoriHeroBg} alt="" className="h-full w-full object-cover" />
+          <div className="absolute inset-0 bg-foreground/80" />
+        </div>
+
+        <div className="container-main relative z-10 grid items-center gap-8 py-16 md:py-24 lg:grid-cols-[1fr_auto]">
           {/* Left — Text */}
           <div className="text-primary-foreground">
             <span className="inline-block rounded-full bg-primary/20 px-4 py-1.5 text-xs font-semibold uppercase tracking-wider text-primary">
@@ -38,7 +45,7 @@ const RentPage = () => {
               Vrei să devii livrator?
             </h1>
             <p className="mt-4 text-base text-primary-foreground/80 md:text-lg">
-              DrivePartner te ajută cu tot procesul.
+              DrivePartner te ajută cu tot procesul. Te activăm rapid ca partener pe platformele de livrare. Cel mai mic comision, plăți la timp și suport pe WhatsApp.
             </p>
 
             {/* F20 Offer Card */}
@@ -58,6 +65,10 @@ const RentPage = () => {
                 <div className="flex items-start gap-2.5 text-sm text-primary-foreground/80">
                   <Clock className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
                   <span>După <strong className="text-primary-foreground">7 luni</strong> de închiriere, bicicleta devine a ta!</span>
+                </div>
+                <div className="flex items-start gap-2.5 text-sm text-primary-foreground/80">
+                  <MessageCircle className="mt-0.5 h-4 w-4 shrink-0 text-primary" />
+                  <span>Suport dedicat pe WhatsApp pentru orice problemă</span>
                 </div>
               </div>
               <div className="mt-6 flex flex-wrap gap-3">
@@ -79,12 +90,17 @@ const RentPage = () => {
             </div>
           </div>
 
-          {/* Right — Image */}
-          <div className="flex justify-center lg:justify-end">
+          {/* Right — Logo + Bike Image */}
+          <div className="flex flex-col items-center gap-6 lg:gap-8">
+            <img
+              src={logo}
+              alt="DrivePartner Logo"
+              className="h-16 w-auto drop-shadow-lg md:h-20 lg:h-24"
+            />
             <img
               src={duottsF20_1}
               alt="DUOTTS F20 — Bicicletă pentru livratori"
-              className="max-h-[500px] w-auto rounded-lg object-contain drop-shadow-2xl"
+              className="max-h-[400px] w-auto rounded-lg object-contain drop-shadow-2xl"
             />
           </div>
         </div>
