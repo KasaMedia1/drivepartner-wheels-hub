@@ -232,7 +232,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "mountain",
     image: duottsC29max,
-    gallery: [duottsC29max, lifestyleMountain, featureBrakes],
+    gallery: [duottsC29max, lifestyleMountain, c29maxBrakes],
     shortDescription: "E-bike mountain cu motor 960W peak și frâne hidraulice față-spate.",
     longDescription: "DUOTTS C29 Max oferă putere de vârf de 960W și cuplu de 65 Nm pentru urcări abrupte. Frânele hidraulice față-spate și anvelopele 29×2.10 asigură siguranță maximă pe orice suprafață.",
     price: Math.round(1099 * EUR),
@@ -247,10 +247,10 @@ export const products: Product[] = [
       { icon: "weight", value: "150 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Motor 250W nominal / 960W peak", description: "Motor puternic cu putere de vârf de 960W care oferă accelerare rapidă și forță pe urcări abrupte, menținând conformitatea cu reglementările EU.", image: featureMotor },
-      { title: "Frâne hidraulice față și spate", description: "Sistem de frânare hidraulic complet pe ambele roți cu rotoare de 160mm pentru o putere de oprire excepțională în orice condiții.", image: featureBrakes },
-      { title: "Baterie de 18Ah cu autonomie extinsă", description: "Bateria de 48V 18AH oferă o autonomie impresionantă de 100-120 km în modul de pedalare asistată, ideală pentru trasee lungi.", image: featureBattery },
-      { title: "Shimano 7 viteze", description: "Transmisie Shimano fiabilă cu 7 viteze pentru pedalare eficientă pe orice tip de teren.", image: featureGears },
+      { title: "Motor 250W nominal / 960W peak", description: "Motor puternic cu putere de vârf de 960W care oferă accelerare rapidă și forță pe urcări abrupte, menținând conformitatea cu reglementările EU.", image: c29maxMotor },
+      { title: "Frâne hidraulice față și spate", description: "Sistem de frânare hidraulic complet pe ambele roți cu rotoare de 160mm pentru o putere de oprire excepțională în orice condiții.", image: c29maxBrakes },
+      { title: "Baterie de 18Ah cu autonomie extinsă", description: "Bateria de 48V 18AH oferă o autonomie impresionantă de 100-120 km în modul de pedalare asistată, ideală pentru trasee lungi.", image: c29maxBattery },
+      { title: "Shimano 7 viteze", description: "Transmisie Shimano fiabilă cu 7 viteze pentru pedalare eficientă pe orice tip de teren.", image: c29maxGears },
     ],
     specs: {
       "Motor": "250W nominal / 960W peak",
