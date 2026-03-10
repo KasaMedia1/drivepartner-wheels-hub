@@ -18,19 +18,68 @@ import duottsE26 from "@/assets/duotts-e26.jpg";
 import duottsF26lite from "@/assets/duotts-f26lite.jpg";
 import duottsS26pro from "@/assets/duotts-s26pro.jpg";
 
-// Feature & lifestyle images
-import featureMotor from "@/assets/features/feature-motor.jpg";
-import featureBattery from "@/assets/features/feature-battery.jpg";
-import featureDisplay from "@/assets/features/feature-display.jpg";
-import featureBrakes from "@/assets/features/feature-brakes.jpg";
-import featureSuspension from "@/assets/features/feature-suspension.jpg";
-import featureFattire from "@/assets/features/feature-fattire.jpg";
-import featureGears from "@/assets/features/feature-gears.jpg";
-import featureFrame from "@/assets/features/feature-frame.jpg";
-import featureDualmotor from "@/assets/features/feature-dualmotor.jpg";
-import featureGps from "@/assets/features/feature-gps.jpg";
-import featureColorchange from "@/assets/features/feature-colorchange.jpg";
-import featureTorquesensor from "@/assets/features/feature-torquesensor.jpg";
+// Individual feature images per product
+import c29kMotor from "@/assets/features/c29k-motor.jpg";
+import c29kBattery from "@/assets/features/c29k-battery.jpg";
+import c29kBrakes from "@/assets/features/c29k-brakes.jpg";
+import c29kGears from "@/assets/features/c29k-gears.jpg";
+import c29kDisplay from "@/assets/features/c29k-display.jpg";
+import c29kFrame from "@/assets/features/c29k-frame.jpg";
+import c29proMotor from "@/assets/features/c29pro-motor.jpg";
+import c29proGears from "@/assets/features/c29pro-gears.jpg";
+import c29proDisplay from "@/assets/features/c29pro-display.jpg";
+import c29proSuspension from "@/assets/features/c29pro-suspension.jpg";
+import c29maxMotor from "@/assets/features/c29max-motor.jpg";
+import c29maxBrakes from "@/assets/features/c29max-brakes.jpg";
+import c29maxBattery from "@/assets/features/c29max-battery.jpg";
+import c29maxGears from "@/assets/features/c29max-gears.jpg";
+import c29liteDisplay from "@/assets/features/c29lite-display.jpg";
+import c29liteGears from "@/assets/features/c29lite-gears.jpg";
+import c29liteBrakes from "@/assets/features/c29lite-brakes.jpg";
+import c29liteFrame from "@/assets/features/c29lite-frame.jpg";
+import e29Torque from "@/assets/features/e29-torque.jpg";
+import e29Gears from "@/assets/features/e29-gears.jpg";
+import e29Brakes from "@/assets/features/e29-brakes.jpg";
+import e29Tires from "@/assets/features/e29-tires.jpg";
+import n26Dualmotor from "@/assets/features/n26-dualmotor.jpg";
+import n26Battery from "@/assets/features/n26-battery.jpg";
+import n26Gps from "@/assets/features/n26-gps.jpg";
+import n26Suspension from "@/assets/features/n26-suspension.jpg";
+import n26Fattire from "@/assets/features/n26-fattire.jpg";
+import n26redMotor from "@/assets/features/n26red-motor.jpg";
+import n26redBattery from "@/assets/features/n26red-battery.jpg";
+import n26redGps from "@/assets/features/n26red-gps.jpg";
+import n26redFrame from "@/assets/features/n26red-frame.jpg";
+import f26proMotor from "@/assets/features/f26pro-motor.jpg";
+import f26proBattery from "@/assets/features/f26pro-battery.jpg";
+import f26proBrakes from "@/assets/features/f26pro-brakes.jpg";
+import f26proDisplay from "@/assets/features/f26pro-display.jpg";
+import f26silverMotor from "@/assets/features/f26silver-motor.jpg";
+import f26silverFrame from "@/assets/features/f26silver-frame.jpg";
+import f26silverBattery from "@/assets/features/f26silver-battery.jpg";
+import f26silverBrakes from "@/assets/features/f26silver-brakes.jpg";
+import f20Battery from "@/assets/features/f20-battery.jpg";
+import f20Frame from "@/assets/features/f20-frame.jpg";
+import f20Suspension from "@/assets/features/f20-suspension.jpg";
+import f20Fattire from "@/assets/features/f20-fattire.jpg";
+import e26bluColorframe from "@/assets/features/e26blu-colorframe.jpg";
+import e26bluMotor from "@/assets/features/e26blu-motor.jpg";
+import e26bluBattery from "@/assets/features/e26blu-battery.jpg";
+import e26bluGears from "@/assets/features/e26blu-gears.jpg";
+import e26bluSuspension from "@/assets/features/e26blu-suspension.jpg";
+import e26bluBrakes from "@/assets/features/e26blu-brakes.jpg";
+import e26Colorframe from "@/assets/features/e26-colorframe.jpg";
+import e26Motor from "@/assets/features/e26-motor.jpg";
+import e26Battery from "@/assets/features/e26-battery.jpg";
+import e26Suspension from "@/assets/features/e26-suspension.jpg";
+import f26liteMotor from "@/assets/features/f26lite-motor.jpg";
+import f26liteBattery from "@/assets/features/f26lite-battery.jpg";
+import f26liteFattire from "@/assets/features/f26lite-fattire.jpg";
+import f26liteDisplay from "@/assets/features/f26lite-display.jpg";
+import s26proMotor from "@/assets/features/s26pro-motor.jpg";
+import s26proSuspension from "@/assets/features/s26pro-suspension.jpg";
+import s26proBattery from "@/assets/features/s26pro-battery.jpg";
+import s26proDisplay from "@/assets/features/s26pro-display.jpg";
 import lifestyleMountain from "@/assets/features/lifestyle-mountain.jpg";
 import lifestyleFattire from "@/assets/features/lifestyle-fattire.jpg";
 import lifestyleRetro from "@/assets/features/lifestyle-retro.jpg";
@@ -86,7 +135,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "mountain",
     image: duottsC29k,
-    gallery: [duottsC29k, lifestyleMountain, featureMotor],
+    gallery: [duottsC29k, lifestyleMountain, c29kMotor],
     shortDescription: "E-bike mountain 29\" cu baterie dublă și autonomie excepțională.",
     longDescription: "DUOTTS C29-K cu baterie dublă oferă o autonomie impresionantă de până la 170 km în modul asistat. Echipat cu motor hub de 750W, frâne hidraulice Zoom și anvelope Chaoyang 29×2.1, este perfect pentru trasee lungi și ture de weekend.",
     price: Math.round(1169 * EUR),
@@ -101,12 +150,12 @@ export const products: Product[] = [
       { icon: "weight", value: "150 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Motor fără perii de 750W", description: "Motor de ultimă generație care oferă putere imensă și eficiență maximă, combinând viteza cu funcționarea silențioasă. Cuceriți cu ușurință urcările și încărcăturile grele.", image: featureMotor },
-      { title: "Baterie dublă 15+22.5Ah", description: "Cu o baterie de 15+22.5 Ah, acceptă modul pedalare asistată timp de 150-170 km. Farurile luminează calea înainte, în timp ce furca față ușoară din aluminiu asigură o călătorie sigură.", image: featureBattery },
-      { title: "Frâne hidraulice pe disc", description: "Echipată standard cu frâne hidraulice pe disc, C29-K oferă o putere de frânare constantă și sigură în toate condițiile de mers. Sistemul hidraulic asigură o modulare lină și precisă a frânării.", image: featureBrakes },
-      { title: "Transmisie Shimano 21 viteze", description: "Dotat cu un sistem de transmisie Shimano cu 21 de viteze și o protecție pentru schimbătorul spate, C29-K asigură o mers lină și fiabilă pe orice tip de teren.", image: featureGears },
-      { title: "Display HD 2.4\" cu Bluetooth", description: "Ecran HD de 2,4 inch compatibil cu Bluetooth pentru aplicația Duotts. Monitorizează viteza, distanța, nivelul bateriei și modul de asistență în timp real.", image: featureDisplay },
-      { title: "Componente premium", description: "Cadru din aliaj de aluminiu, ghidon de 68 cm, manivelă de 170 mm, pedale din aliaj de aluminiu și portbagaj spate din oțel cu sarcină maximă de 25 kg.", image: featureFrame },
+      { title: "Motor fără perii de 750W", description: "Motor de ultimă generație care oferă putere imensă și eficiență maximă, combinând viteza cu funcționarea silențioasă. Cuceriți cu ușurință urcările și încărcăturile grele.", image: c29kMotor },
+      { title: "Baterie dublă 15+22.5Ah", description: "Cu o baterie de 15+22.5 Ah, acceptă modul pedalare asistată timp de 150-170 km. Farurile luminează calea înainte, în timp ce furca față ușoară din aluminiu asigură o călătorie sigură.", image: c29kBattery },
+      { title: "Frâne hidraulice pe disc", description: "Echipată standard cu frâne hidraulice pe disc, C29-K oferă o putere de frânare constantă și sigură în toate condițiile de mers. Sistemul hidraulic asigură o modulare lină și precisă a frânării.", image: c29kBrakes },
+      { title: "Transmisie Shimano 21 viteze", description: "Dotat cu un sistem de transmisie Shimano cu 21 de viteze și o protecție pentru schimbătorul spate, C29-K asigură o mers lină și fiabilă pe orice tip de teren.", image: c29kGears },
+      { title: "Display HD 2.4\" cu Bluetooth", description: "Ecran HD de 2,4 inch compatibil cu Bluetooth pentru aplicația Duotts. Monitorizează viteza, distanța, nivelul bateriei și modul de asistență în timp real.", image: c29kDisplay },
+      { title: "Componente premium", description: "Cadru din aliaj de aluminiu, ghidon de 68 cm, manivelă de 170 mm, pedale din aliaj de aluminiu și portbagaj spate din oțel cu sarcină maximă de 25 kg.", image: c29kFrame },
     ],
     specs: {
       "Motor": "48V 750W Hub Motor",
@@ -140,7 +189,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "mountain",
     image: duottsC29pro,
-    gallery: [duottsC29pro, lifestyleMountain, featureBattery],
+    gallery: [duottsC29pro, lifestyleMountain, c29proMotor],
     shortDescription: "E-bike mountain 29\" cu Shimano 21 viteze și conectivitate Bluetooth.",
     longDescription: "DUOTTS C29 Pro combină performanța unui motor de 750W cu transmisia Shimano 21 de viteze pentru control total pe orice teren. Cu Bluetooth și aplicație dedicată, monitorizezi fiecare aspect al călătoriei.",
     price: Math.round(849 * EUR),
@@ -155,10 +204,10 @@ export const products: Product[] = [
       { icon: "weight", value: "120 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Motor de 750W fără perii", description: "Motor hub puternic de 750W care oferă accelerare lină și putere suficientă pentru orice urcuș. Funcționare silențioasă și eficiență energetică de top.", image: featureMotor },
-      { title: "Shimano 21 de viteze", description: "Transmisie Shimano completă cu 21 de viteze pentru adaptare perfectă la orice tip de teren, de la urcări abrupte la drumuri plate.", image: featureGears },
-      { title: "Conectivitate Bluetooth & APP", description: "Monitorizează toate datele călătoriei prin aplicația DUOTTS: viteză, distanță, nivel baterie, calorii arse și multe altele.", image: featureDisplay },
-      { title: "Suspensie frontală cu blocare", description: "Furcă de suspensie din aluminiu cu cursă generoasă și opțiune de blocare pentru drumuri netede.", image: featureSuspension },
+      { title: "Motor de 750W fără perii", description: "Motor hub puternic de 750W care oferă accelerare lină și putere suficientă pentru orice urcuș. Funcționare silențioasă și eficiență energetică de top.", image: c29proMotor },
+      { title: "Shimano 21 de viteze", description: "Transmisie Shimano completă cu 21 de viteze pentru adaptare perfectă la orice tip de teren, de la urcări abrupte la drumuri plate.", image: c29proGears },
+      { title: "Conectivitate Bluetooth & APP", description: "Monitorizează toate datele călătoriei prin aplicația DUOTTS: viteză, distanță, nivel baterie, calorii arse și multe altele.", image: c29proDisplay },
+      { title: "Suspensie frontală cu blocare", description: "Furcă de suspensie din aluminiu cu cursă generoasă și opțiune de blocare pentru drumuri netede.", image: c29proSuspension },
     ],
     specs: {
       "Motor": "750W 48V Hub Motor",
@@ -183,7 +232,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "mountain",
     image: duottsC29max,
-    gallery: [duottsC29max, lifestyleMountain, featureBrakes],
+    gallery: [duottsC29max, lifestyleMountain, c29maxBrakes],
     shortDescription: "E-bike mountain cu motor 960W peak și frâne hidraulice față-spate.",
     longDescription: "DUOTTS C29 Max oferă putere de vârf de 960W și cuplu de 65 Nm pentru urcări abrupte. Frânele hidraulice față-spate și anvelopele 29×2.10 asigură siguranță maximă pe orice suprafață.",
     price: Math.round(1099 * EUR),
@@ -198,10 +247,10 @@ export const products: Product[] = [
       { icon: "weight", value: "150 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Motor 250W nominal / 960W peak", description: "Motor puternic cu putere de vârf de 960W care oferă accelerare rapidă și forță pe urcări abrupte, menținând conformitatea cu reglementările EU.", image: featureMotor },
-      { title: "Frâne hidraulice față și spate", description: "Sistem de frânare hidraulic complet pe ambele roți cu rotoare de 160mm pentru o putere de oprire excepțională în orice condiții.", image: featureBrakes },
-      { title: "Baterie de 18Ah cu autonomie extinsă", description: "Bateria de 48V 18AH oferă o autonomie impresionantă de 100-120 km în modul de pedalare asistată, ideală pentru trasee lungi.", image: featureBattery },
-      { title: "Shimano 7 viteze", description: "Transmisie Shimano fiabilă cu 7 viteze pentru pedalare eficientă pe orice tip de teren.", image: featureGears },
+      { title: "Motor 250W nominal / 960W peak", description: "Motor puternic cu putere de vârf de 960W care oferă accelerare rapidă și forță pe urcări abrupte, menținând conformitatea cu reglementările EU.", image: c29maxMotor },
+      { title: "Frâne hidraulice față și spate", description: "Sistem de frânare hidraulic complet pe ambele roți cu rotoare de 160mm pentru o putere de oprire excepțională în orice condiții.", image: c29maxBrakes },
+      { title: "Baterie de 18Ah cu autonomie extinsă", description: "Bateria de 48V 18AH oferă o autonomie impresionantă de 100-120 km în modul de pedalare asistată, ideală pentru trasee lungi.", image: c29maxBattery },
+      { title: "Shimano 7 viteze", description: "Transmisie Shimano fiabilă cu 7 viteze pentru pedalare eficientă pe orice tip de teren.", image: c29maxGears },
     ],
     specs: {
       "Motor": "250W nominal / 960W peak",
@@ -226,7 +275,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "urban",
     image: duottsC29lite,
-    gallery: [duottsC29lite, featureDisplay, featureGears],
+    gallery: [duottsC29lite, c29liteDisplay, c29liteGears],
     shortDescription: "E-bike accesibil cu display color multifuncțional.",
     longDescription: "DUOTTS C29 Lite este alegerea perfectă pentru cei care doresc un e-bike de calitate la un preț accesibil. Cu display color multifuncțional și Shimano 7 viteze, oferă o experiență completă.",
     price: Math.round(629 * EUR),
@@ -241,10 +290,10 @@ export const products: Product[] = [
       { icon: "weight", value: "120 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Display color multifuncțional", description: "Ecran color cu 3 butoane care afișează viteza, distanța, nivelul bateriei și modul de asistență selectat. Ușor de citit în orice condiții de lumină.", image: featureDisplay },
-      { title: "Shimano 7 viteze", description: "Transmisie Shimano fiabilă cu 7 trepte pentru pedalare eficientă pe orice tip de teren urban sau suburban.", image: featureGears },
-      { title: "Frâne pe disc mecanice", description: "Frâne disc mecanice față și spate pentru opriri sigure și previzibile. Întreținere simplă și cost redus.", image: featureBrakes },
-      { title: "Preț accesibil, calitate premium", description: "Cel mai accesibil model din gama DUOTTS, fără compromisuri la capitolul calitate și fiabilitate.", image: featureFrame },
+      { title: "Display color multifuncțional", description: "Ecran color cu 3 butoane care afișează viteza, distanța, nivelul bateriei și modul de asistență selectat. Ușor de citit în orice condiții de lumină.", image: c29liteDisplay },
+      { title: "Shimano 7 viteze", description: "Transmisie Shimano fiabilă cu 7 trepte pentru pedalare eficientă pe orice tip de teren urban sau suburban.", image: c29liteGears },
+      { title: "Frâne pe disc mecanice", description: "Frâne disc mecanice față și spate pentru opriri sigure și previzibile. Întreținere simplă și cost redus.", image: c29liteBrakes },
+      { title: "Preț accesibil, calitate premium", description: "Cel mai accesibil model din gama DUOTTS, fără compromisuri la capitolul calitate și fiabilitate.", image: c29liteFrame },
     ],
     specs: {
       "Motor": "36V 250W",
@@ -268,7 +317,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "trekking",
     image: duottsE29,
-    gallery: [duottsE29, lifestyleTrekking, featureTorquesensor],
+    gallery: [duottsE29, lifestyleTrekking, e29Torque],
     shortDescription: "E-bike premium cu motor Bafang, senzor de cuplu și Shimano 14 viteze.",
     longDescription: "DUOTTS E29 Silver este un e-bike premium echipat cu motor Bafang de 250W, senzor de cuplu pentru pedalare naturală și transmisie Shimano 2×7 viteze. Conectivitatea Bluetooth și aplicația dedicată îți oferă control total.",
     price: Math.round(1359 * EUR),
@@ -283,10 +332,10 @@ export const products: Product[] = [
       { icon: "weight", value: "120 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Motor Bafang 250W cu senzor de cuplu", description: "Motor Bafang de înaltă calitate cu senzor de cuplu integrat pentru cea mai naturală experiență de pedalare. Puterea se adaptează la efortul tău în timp real.", image: featureTorquesensor },
-      { title: "Shimano 2×7 (14 viteze)", description: "Transmisie Shimano cu 14 trepte (2×7) pentru versatilitate maximă pe orice tip de teren, de la urcări la viteze de croazieră.", image: featureGears },
-      { title: "Frâne disc cu ulei", description: "Frâne hidraulice cu ulei față și spate pentru putere de frânare constantă în orice condiții meteo.", image: featureBrakes },
-      { title: "Anvelope KENDA 27.5×2.6\"", description: "Anvelope KENDA de lățime generoasă pentru tracțiune excelentă și confort sporit pe drumuri variate.", image: featureFattire },
+      { title: "Motor Bafang 250W cu senzor de cuplu", description: "Motor Bafang de înaltă calitate cu senzor de cuplu integrat pentru cea mai naturală experiență de pedalare. Puterea se adaptează la efortul tău în timp real.", image: e29Torque },
+      { title: "Shimano 2×7 (14 viteze)", description: "Transmisie Shimano cu 14 trepte (2×7) pentru versatilitate maximă pe orice tip de teren, de la urcări la viteze de croazieră.", image: e29Gears },
+      { title: "Frâne disc cu ulei", description: "Frâne hidraulice cu ulei față și spate pentru putere de frânare constantă în orice condiții meteo.", image: e29Brakes },
+      { title: "Anvelope KENDA 27.5×2.6\"", description: "Anvelope KENDA de lățime generoasă pentru tracțiune excelentă și confort sporit pe drumuri variate.", image: e29Tires },
     ],
     specs: {
       "Motor": "Bafang 48V 250W",
@@ -312,7 +361,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "fat-tire",
     image: duottsN26,
-    gallery: [duottsN26, lifestyleFattire, featureDualmotor],
+    gallery: [duottsN26, lifestyleFattire, n26Dualmotor],
     shortDescription: "E-bike dual motor 750W×2 cu baterie Samsung și tracking GPS.",
     longDescription: "DUOTTS N26 este un monstru de performanță cu două motoare de 750W, baterie Samsung de 20AH și display 4G LCD cu tracking în timp real. Sistemul anti-furt inteligent și anvelopele fat 26×4.0 îl fac perfect pentru orice aventură.",
     price: Math.round(1399 * EUR),
@@ -327,12 +376,12 @@ export const products: Product[] = [
       { icon: "weight", value: "150 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Dual motor 750W×2", description: "Două motoare independente de 750W cu cuplu combinat de 130 Nm pentru tracțiune și putere inegalabile pe orice teren.", image: featureDualmotor },
-      { title: "Baterie Samsung 20AH", description: "Celule Samsung de înaltă calitate oferă o autonomie de 100-120 km și o durabilitate excepțională pe termen lung.", image: featureBattery },
-      { title: "Display 4G LCD cu GPS tracking", description: "Display inteligent cu conectivitate 4G, tracking GPS în timp real și port USB Type-C. Monitorizează-ți bicicleta oricând, oriunde.", image: featureGps },
-      { title: "Sistem anti-furt inteligent", description: "Sistem avansat de protecție anti-furt cu alerte în timp real și localizare GPS pentru liniștea ta sufletească.", image: featureGps },
-      { title: "Suspensie completă", description: "Suspensie față și spate pentru un confort excepțional pe orice tip de teren, de la asfalt la off-road.", image: featureSuspension },
-      { title: "Anvelope fat 26×4.0", description: "Anvelope late de 4 inch pentru tracțiune maximă pe nisip, zăpadă, noroi sau pietriș.", image: featureFattire },
+      { title: "Dual motor 750W×2", description: "Două motoare independente de 750W cu cuplu combinat de 130 Nm pentru tracțiune și putere inegalabile pe orice teren.", image: n26Dualmotor },
+      { title: "Baterie Samsung 20AH", description: "Celule Samsung de înaltă calitate oferă o autonomie de 100-120 km și o durabilitate excepțională pe termen lung.", image: n26Battery },
+      { title: "Display 4G LCD cu GPS tracking", description: "Display inteligent cu conectivitate 4G, tracking GPS în timp real și port USB Type-C. Monitorizează-ți bicicleta oricând, oriunde.", image: n26Gps },
+      { title: "Sistem anti-furt inteligent", description: "Sistem avansat de protecție anti-furt cu alerte în timp real și localizare GPS pentru liniștea ta sufletească.", image: n26Gps },
+      { title: "Suspensie completă", description: "Suspensie față și spate pentru un confort excepțional pe orice tip de teren, de la asfalt la off-road.", image: n26Suspension },
+      { title: "Anvelope fat 26×4.0", description: "Anvelope late de 4 inch pentru tracțiune maximă pe nisip, zăpadă, noroi sau pietriș.", image: n26Fattire },
     ],
     specs: {
       "Motor": "Dual 750W×2",
@@ -359,7 +408,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "fat-tire",
     image: duottsN26red,
-    gallery: [duottsN26red, lifestyleFattire, featureGps],
+    gallery: [duottsN26red, lifestyleFattire, n26redGps],
     shortDescription: "Versiunea roșie a e-bike-ului dual motor N26 cu GPS tracking.",
     longDescription: "DUOTTS N26 Red – aceeași putere extremă în versiunea roșie. Dual motor 750W×2, baterie Samsung 20AH, display 4G LCD cu tracking real-time și sistem anti-furt inteligent.",
     price: Math.round(1399 * EUR),
@@ -374,10 +423,10 @@ export const products: Product[] = [
       { icon: "weight", value: "150 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Dual motor 750W×2", description: "Două motoare independente de 750W pentru tracțiune integrală și putere neegalată pe orice suprafață.", image: featureDualmotor },
-      { title: "Baterie Samsung 20AH", description: "Celule premium Samsung pentru autonomie extinsă de 100-120 km și durabilitate pe termen lung.", image: featureBattery },
-      { title: "GPS tracking & anti-furt", description: "Sistem integrat de localizare GPS și protecție anti-furt cu alerte în timp real pe telefon.", image: featureGps },
-      { title: "Design roșu premium", description: "Finisaj roșu vibrant pe cadru din aliaj de aluminiu, pentru o prezență vizuală puternică.", image: featureFrame },
+      { title: "Dual motor 750W×2", description: "Două motoare independente de 750W pentru tracțiune integrală și putere neegalată pe orice suprafață.", image: n26redMotor },
+      { title: "Baterie Samsung 20AH", description: "Celule premium Samsung pentru autonomie extinsă de 100-120 km și durabilitate pe termen lung.", image: n26redBattery },
+      { title: "GPS tracking & anti-furt", description: "Sistem integrat de localizare GPS și protecție anti-furt cu alerte în timp real pe telefon.", image: n26redGps },
+      { title: "Design roșu premium", description: "Finisaj roșu vibrant pe cadru din aliaj de aluminiu, pentru o prezență vizuală puternică.", image: n26redFrame },
     ],
     specs: {
       "Motor": "Dual 750W×2",
@@ -404,7 +453,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "fat-tire",
     image: duottsF26pro,
-    gallery: [duottsF26pro, lifestyleFattire, featureDualmotor],
+    gallery: [duottsF26pro, lifestyleFattire, f26proMotor],
     shortDescription: "E-bike dual motor 750W×2 cu baterie Samsung 20AH și Bluetooth.",
     longDescription: "DUOTTS F26 Pro combină puterea a două motoare de 750W cu bateria Samsung de 20AH pentru performanță de top. Suspensie frontală, frâne hidraulice și conectivitate Bluetooth completează pachetul.",
     price: Math.round(1399 * EUR),
@@ -419,10 +468,10 @@ export const products: Product[] = [
       { icon: "weight", value: "150 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Dual motor 750W×2", description: "Putere combinată de 1500W prin două motoare independente pentru accelerare rapidă și urcări ușoare.", image: featureDualmotor },
-      { title: "Baterie Samsung 20AH", description: "Celule Samsung premium pentru o autonomie de 100-120 km în modul de pedalare asistată.", image: featureBattery },
-      { title: "Frâne hidraulice pe disc", description: "Sistem de frânare hidraulic pe ambele roți pentru siguranță maximă la orice viteză.", image: featureBrakes },
-      { title: "Conectivitate Bluetooth & APP", description: "Aplicație DUOTTS dedicată pentru monitorizarea completă a bicicletei și a performanțelor tale.", image: featureDisplay },
+      { title: "Dual motor 750W×2", description: "Putere combinată de 1500W prin două motoare independente pentru accelerare rapidă și urcări ușoare.", image: f26proMotor },
+      { title: "Baterie Samsung 20AH", description: "Celule Samsung premium pentru o autonomie de 100-120 km în modul de pedalare asistată.", image: f26proBattery },
+      { title: "Frâne hidraulice pe disc", description: "Sistem de frânare hidraulic pe ambele roți pentru siguranță maximă la orice viteză.", image: f26proBrakes },
+      { title: "Conectivitate Bluetooth & APP", description: "Aplicație DUOTTS dedicată pentru monitorizarea completă a bicicletei și a performanțelor tale.", image: f26proDisplay },
     ],
     specs: {
       "Motor": "Dual 750W×2",
@@ -448,7 +497,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "fat-tire",
     image: duottsF26proSilver,
-    gallery: [duottsF26proSilver, featureDualmotor, featureBrakes],
+    gallery: [duottsF26proSilver, f26silverMotor, f26silverBrakes],
     shortDescription: "Versiunea argintie a e-bike-ului F26 Pro cu dual motor.",
     longDescription: "DUOTTS F26 Pro Silver – aceeași performanță excepțională în finisaj argintiu elegant. Dual motor 750W×2, baterie Samsung 20AH și conectivitate completă.",
     price: Math.round(1399 * EUR),
@@ -463,10 +512,10 @@ export const products: Product[] = [
       { icon: "weight", value: "150 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Dual motor 750W×2", description: "Tracțiune integrală cu două motoare de 750W pentru performanță maximă pe orice suprafață.", image: featureDualmotor },
-      { title: "Finisaj argintiu premium", description: "Cadru din aliaj de aluminiu cu finisaj argintiu elegant, combinând estetica cu durabilitatea.", image: featureFrame },
-      { title: "Baterie Samsung 20AH", description: "Autonomie extinsă de 100-120 km cu celule Samsung de înaltă calitate și fiabilitate dovedită.", image: featureBattery },
-      { title: "Frâne hidraulice", description: "Sistem de frânare hidraulic pe ambele roți pentru opriri sigure și controlate.", image: featureBrakes },
+      { title: "Dual motor 750W×2", description: "Tracțiune integrală cu două motoare de 750W pentru performanță maximă pe orice suprafață.", image: f26silverMotor },
+      { title: "Finisaj argintiu premium", description: "Cadru din aliaj de aluminiu cu finisaj argintiu elegant, combinând estetica cu durabilitatea.", image: f26silverFrame },
+      { title: "Baterie Samsung 20AH", description: "Autonomie extinsă de 100-120 km cu celule Samsung de înaltă calitate și fiabilitate dovedită.", image: f26silverBattery },
+      { title: "Frâne hidraulice", description: "Sistem de frânare hidraulic pe ambele roți pentru opriri sigure și controlate.", image: f26silverBrakes },
     ],
     specs: {
       "Motor": "Dual 750W×2",
@@ -492,7 +541,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "retro",
     image: duottsF20,
-    gallery: [duottsF20, lifestyleRetro, featureBattery],
+    gallery: [duottsF20, lifestyleRetro, f20Battery],
     shortDescription: "E-bike retro cu baterie 52V 27AH și autonomie de 140 km.",
     longDescription: "DUOTTS F20 este un e-bike cu design retro care combină stilul vintage cu tehnologia modernă. Bateria puternică de 52V 27AH oferă o autonomie excepțională de până la 140 km în mod asistat.",
     price: Math.round(1369 * EUR),
@@ -507,10 +556,10 @@ export const products: Product[] = [
       { icon: "weight", value: "150 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Baterie uriașă 52V 27AH", description: "Una dintre cele mai mari baterii din gamă, oferind o autonomie de 120-140 km în modul asistat. Ideală pentru călătorii lungi fără grija încărcării.", image: featureBattery },
-      { title: "Design retro iconic", description: "Cadru cu design retro elegant care combină nostalgia cu tehnologia de ultimă generație.", image: featureFrame },
-      { title: "Suspensie completă", description: "Suspensie față și spate pentru confort maxim pe orice tip de teren, inclusiv pe drumuri cu denivelări.", image: featureSuspension },
-      { title: "Anvelope fat 20×4.0", description: "Anvelope late de 4 inch pe roți de 20\" pentru stabilitate și tracțiune excelente, cu un centru de greutate coborât.", image: featureFattire },
+      { title: "Baterie uriașă 52V 27AH", description: "Una dintre cele mai mari baterii din gamă, oferind o autonomie de 120-140 km în modul asistat. Ideală pentru călătorii lungi fără grija încărcării.", image: f20Battery },
+      { title: "Design retro iconic", description: "Cadru cu design retro elegant care combină nostalgia cu tehnologia de ultimă generație.", image: f20Frame },
+      { title: "Suspensie completă", description: "Suspensie față și spate pentru confort maxim pe orice tip de teren, inclusiv pe drumuri cu denivelări.", image: f20Suspension },
+      { title: "Anvelope fat 20×4.0", description: "Anvelope late de 4 inch pe roți de 20\" pentru stabilitate și tracțiune excelente, cu un centru de greutate coborât.", image: f20Fattire },
     ],
     specs: {
       "Motor": "52V 750W single motor",
@@ -535,7 +584,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "fat-tire",
     image: duottsE26blu,
-    gallery: [duottsE26blu, featureColorchange, featureTorquesensor],
+    gallery: [duottsE26blu, e26bluColorframe, e26bluMotor],
     shortDescription: "E-bike premium cu cadru color-changing, motor Bafang și senzor de cuplu.",
     longDescription: "DUOTTS blu E26 este bijuteria gamei – cadru din aluminiu cu efect color-changing, motor Bafang de 750W, baterie Samsung 20AH și senzor de cuplu pentru pedalare ultra-naturală.",
     price: Math.round(1999 * EUR),
@@ -550,12 +599,12 @@ export const products: Product[] = [
       { icon: "weight", value: "150 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Cadru color-changing", description: "Cadru din aliaj de aluminiu cu efect color-changing unic care își schimbă nuanța în funcție de unghiul luminii.", image: featureColorchange },
-      { title: "Motor Bafang 750W cu senzor cuplu", description: "Motor Bafang premium cu senzor de cuplu integrat pentru cea mai naturală și intuitivă experiență de pedalare electrică.", image: featureTorquesensor },
-      { title: "Baterie Samsung 20AH", description: "Celule Samsung de top pentru fiabilitate pe termen lung și autonomie de 100-120 km în mod asistat.", image: featureBattery },
-      { title: "Shimano 8 viteze", description: "Transmisie Shimano cu 8 trepte pentru versatilitate sporită și schimbări de viteză precise.", image: featureGears },
-      { title: "Suspensie completă", description: "Amortizare față și spate pentru confort maxim pe drumuri dificile și trasee off-road.", image: featureSuspension },
-      { title: "Frâne hidraulice premium", description: "Sistem de frânare hidraulic de înaltă performanță pentru opriri sigure la orice viteză.", image: featureBrakes },
+      { title: "Cadru color-changing", description: "Cadru din aliaj de aluminiu cu efect color-changing unic care își schimbă nuanța în funcție de unghiul luminii.", image: e26bluColorframe },
+      { title: "Motor Bafang 750W cu senzor cuplu", description: "Motor Bafang premium cu senzor de cuplu integrat pentru cea mai naturală și intuitivă experiență de pedalare electrică.", image: e26bluMotor },
+      { title: "Baterie Samsung 20AH", description: "Celule Samsung de top pentru fiabilitate pe termen lung și autonomie de 100-120 km în mod asistat.", image: e26bluBattery },
+      { title: "Shimano 8 viteze", description: "Transmisie Shimano cu 8 trepte pentru versatilitate sporită și schimbări de viteză precise.", image: e26bluGears },
+      { title: "Suspensie completă", description: "Amortizare față și spate pentru confort maxim pe drumuri dificile și trasee off-road.", image: e26bluSuspension },
+      { title: "Frâne hidraulice premium", description: "Sistem de frânare hidraulic de înaltă performanță pentru opriri sigure la orice viteză.", image: e26bluBrakes },
     ],
     specs: {
       "Motor": "750W Bafang",
@@ -581,7 +630,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "fat-tire",
     image: duottsE26,
-    gallery: [duottsE26, featureColorchange, featureBattery],
+    gallery: [duottsE26, e26Colorframe, e26Battery],
     shortDescription: "E-bike premium cu cadru color-changing și motor Bafang 750W.",
     longDescription: "DUOTTS E26 oferă aceeași platformă premium ca și versiunea blu, cu cadru color-changing din aluminiu, motor Bafang 750W și senzor de cuplu pentru o experiență de pedalare naturală.",
     price: Math.round(1999 * EUR),
@@ -596,10 +645,10 @@ export const products: Product[] = [
       { icon: "weight", value: "150 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Cadru color-changing din aluminiu", description: "Design unic cu efect color-changing care schimbă nuanța în funcție de lumină, oferind o prezență vizuală spectaculoasă.", image: featureColorchange },
-      { title: "Motor Bafang 750W cu senzor cuplu", description: "Pedalare naturală datorită senzorului de cuplu care adaptează puterea motorului la efortul depus.", image: featureTorquesensor },
-      { title: "Baterie Samsung 20AH", description: "Autonomie generoasă de 100-120 km cu celule premium Samsung pentru fiabilitate maximă.", image: featureBattery },
-      { title: "Suspensie completă", description: "Amortizare față și spate pentru un confort excepțional pe orice suprafață.", image: featureSuspension },
+      { title: "Cadru color-changing din aluminiu", description: "Design unic cu efect color-changing care schimbă nuanța în funcție de lumină, oferind o prezență vizuală spectaculoasă.", image: e26Colorframe },
+      { title: "Motor Bafang 750W cu senzor cuplu", description: "Pedalare naturală datorită senzorului de cuplu care adaptează puterea motorului la efortul depus.", image: e26Motor },
+      { title: "Baterie Samsung 20AH", description: "Autonomie generoasă de 100-120 km cu celule premium Samsung pentru fiabilitate maximă.", image: e26Battery },
+      { title: "Suspensie completă", description: "Amortizare față și spate pentru un confort excepțional pe orice suprafață.", image: e26Suspension },
     ],
     specs: {
       "Motor": "750W Bafang",
@@ -625,7 +674,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "fat-tire",
     image: duottsF26lite,
-    gallery: [duottsF26lite, lifestyleFattire, featureMotor],
+    gallery: [duottsF26lite, lifestyleFattire, f26liteMotor],
     shortDescription: "E-bike fat-tire cu baterie Samsung 18AH și motor 500W.",
     longDescription: "DUOTTS F26 Lite oferă un echilibru perfect între performanță și preț. Motor de 500W, baterie Samsung de 18AH și anvelope fat 26×4.0 pentru tracțiune excelentă.",
     price: Math.round(1249 * EUR),
@@ -640,10 +689,10 @@ export const products: Product[] = [
       { icon: "weight", value: "150 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Motor 500W eficient", description: "Motor de 500W care oferă un echilibru excelent între putere și eficiență energetică pentru aventuri de zi cu zi.", image: featureMotor },
-      { title: "Baterie Samsung 18AH", description: "Celule Samsung premium pentru o autonomie de 80-90 km și o durată de viață extinsă a bateriei.", image: featureBattery },
-      { title: "Anvelope fat 26×4.0", description: "Anvelope late pentru tracțiune excelentă pe orice suprafață – asfalt, nisip, zăpadă sau noroi.", image: featureFattire },
-      { title: "Conectivitate Bluetooth", description: "Aplicație DUOTTS dedicată pentru monitorizarea performanțelor și setărilor bicicletei.", image: featureDisplay },
+      { title: "Motor 500W eficient", description: "Motor de 500W care oferă un echilibru excelent între putere și eficiență energetică pentru aventuri de zi cu zi.", image: f26liteMotor },
+      { title: "Baterie Samsung 18AH", description: "Celule Samsung premium pentru o autonomie de 80-90 km și o durată de viață extinsă a bateriei.", image: f26liteBattery },
+      { title: "Anvelope fat 26×4.0", description: "Anvelope late pentru tracțiune excelentă pe orice suprafață – asfalt, nisip, zăpadă sau noroi.", image: f26liteFattire },
+      { title: "Conectivitate Bluetooth", description: "Aplicație DUOTTS dedicată pentru monitorizarea performanțelor și setărilor bicicletei.", image: f26liteDisplay },
     ],
     specs: {
       "Motor": "500W",
@@ -668,7 +717,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "fat-tire",
     image: duottsS26pro,
-    gallery: [duottsS26pro, lifestyleFattire, featureSuspension],
+    gallery: [duottsS26pro, lifestyleFattire, s26proSuspension],
     shortDescription: "E-bike dual motor 750W×2 cu suspensie completă și Bluetooth.",
     longDescription: "DUOTTS S26 Pro este echipat cu două motoare de 750W, baterie Samsung 20AH, suspensie față și spate și conectivitate Bluetooth cu aplicație dedicată.",
     price: Math.round(1399 * EUR),
@@ -683,10 +732,10 @@ export const products: Product[] = [
       { icon: "weight", value: "150 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Dual motor 750W×2", description: "Tracțiune integrală cu două motoare puternice de 750W pentru performanță maximă pe orice teren.", image: featureDualmotor },
-      { title: "Suspensie completă față-spate", description: "Sistem de amortizare complet pentru un confort excepțional și control sporit pe trasee tehnice.", image: featureSuspension },
-      { title: "Baterie Samsung 20AH", description: "Celule Samsung de înaltă calitate pentru autonomie extinsă și fiabilitate pe termen lung.", image: featureBattery },
-      { title: "Conectivitate Bluetooth & APP", description: "Monitorizare completă prin aplicația DUOTTS cu date în timp real despre performanță și baterie.", image: featureDisplay },
+      { title: "Dual motor 750W×2", description: "Tracțiune integrală cu două motoare puternice de 750W pentru performanță maximă pe orice teren.", image: s26proMotor },
+      { title: "Suspensie completă față-spate", description: "Sistem de amortizare complet pentru un confort excepțional și control sporit pe trasee tehnice.", image: s26proSuspension },
+      { title: "Baterie Samsung 20AH", description: "Celule Samsung de înaltă calitate pentru autonomie extinsă și fiabilitate pe termen lung.", image: s26proBattery },
+      { title: "Conectivitate Bluetooth & APP", description: "Monitorizare completă prin aplicația DUOTTS cu date în timp real despre performanță și baterie.", image: s26proDisplay },
     ],
     specs: {
       "Motor": "Dual 750W×2",
