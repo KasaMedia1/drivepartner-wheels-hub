@@ -404,7 +404,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "fat-tire",
     image: duottsF26pro,
-    gallery: [duottsF26pro],
+    gallery: [duottsF26pro, lifestyleFattire, featureDualmotor],
     shortDescription: "E-bike dual motor 750W×2 cu baterie Samsung 20AH și Bluetooth.",
     longDescription: "DUOTTS F26 Pro combină puterea a două motoare de 750W cu bateria Samsung de 20AH pentru performanță de top. Suspensie frontală, frâne hidraulice și conectivitate Bluetooth completează pachetul.",
     price: Math.round(1399 * EUR),
@@ -419,10 +419,10 @@ export const products: Product[] = [
       { icon: "weight", value: "150 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Dual motor 750W×2", description: "Putere combinată de 1500W prin două motoare independente pentru accelerare rapidă și urcări ușoare." },
-      { title: "Baterie Samsung 20AH", description: "Celule Samsung premium pentru o autonomie de 100-120 km în modul de pedalare asistată." },
-      { title: "Frâne hidraulice pe disc", description: "Sistem de frânare hidraulic pe ambele roți pentru siguranță maximă la orice viteză." },
-      { title: "Conectivitate Bluetooth & APP", description: "Aplicație DUOTTS dedicată pentru monitorizarea completă a bicicletei și a performanțelor tale." },
+      { title: "Dual motor 750W×2", description: "Putere combinată de 1500W prin două motoare independente pentru accelerare rapidă și urcări ușoare.", image: featureDualmotor },
+      { title: "Baterie Samsung 20AH", description: "Celule Samsung premium pentru o autonomie de 100-120 km în modul de pedalare asistată.", image: featureBattery },
+      { title: "Frâne hidraulice pe disc", description: "Sistem de frânare hidraulic pe ambele roți pentru siguranță maximă la orice viteză.", image: featureBrakes },
+      { title: "Conectivitate Bluetooth & APP", description: "Aplicație DUOTTS dedicată pentru monitorizarea completă a bicicletei și a performanțelor tale.", image: featureDisplay },
     ],
     specs: {
       "Motor": "Dual 750W×2",
