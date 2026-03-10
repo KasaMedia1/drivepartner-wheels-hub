@@ -7,7 +7,10 @@ const categories: { value: BikeCategory | "all"; label: string }[] = [
   { value: "all", label: "Toate" },
   { value: "mountain", label: "Mountain" },
   { value: "urban", label: "Urban" },
+  { value: "fat-tire", label: "Fat-Tire" },
+  { value: "trekking", label: "Trekking" },
   { value: "pliant", label: "Pliant" },
+  { value: "retro", label: "Retro" },
   { value: "road", label: "Road" },
   { value: "cargo", label: "Cargo" },
 ];
