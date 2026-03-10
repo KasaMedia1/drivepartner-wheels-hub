@@ -120,7 +120,7 @@ const Index = () => {
       <AnimateOnScroll>
         <section className="py-16 md:py-24">
           <div className="container-main">
-            <div className="grid items-center gap-10 lg:grid-cols-2">
+            <div className="grid items-center gap-10 md:grid-cols-2">
               <div>
                 <span className="font-heading text-xs font-semibold uppercase tracking-wider text-muted-foreground">Review</span>
                 <h2 className="mt-2 font-heading text-2xl font-bold md:text-3xl">
