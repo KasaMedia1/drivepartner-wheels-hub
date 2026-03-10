@@ -226,7 +226,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "urban",
     image: duottsC29lite,
-    gallery: [duottsC29lite],
+    gallery: [duottsC29lite, featureDisplay, featureGears],
     shortDescription: "E-bike accesibil cu display color multifuncțional.",
     longDescription: "DUOTTS C29 Lite este alegerea perfectă pentru cei care doresc un e-bike de calitate la un preț accesibil. Cu display color multifuncțional și Shimano 7 viteze, oferă o experiență completă.",
     price: Math.round(629 * EUR),
@@ -241,10 +241,10 @@ export const products: Product[] = [
       { icon: "weight", value: "120 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Display color multifuncțional", description: "Ecran color cu 3 butoane care afișează viteza, distanța, nivelul bateriei și modul de asistență selectat. Ușor de citit în orice condiții de lumină." },
-      { title: "Shimano 7 viteze", description: "Transmisie Shimano fiabilă cu 7 trepte pentru pedalare eficientă pe orice tip de teren urban sau suburban." },
-      { title: "Frâne pe disc mecanice", description: "Frâne disc mecanice față și spate pentru opriri sigure și previzibile. Întreținere simplă și cost redus." },
-      { title: "Preț accesibil, calitate premium", description: "Cel mai accesibil model din gama DUOTTS, fără compromisuri la capitolul calitate și fiabilitate." },
+      { title: "Display color multifuncțional", description: "Ecran color cu 3 butoane care afișează viteza, distanța, nivelul bateriei și modul de asistență selectat. Ușor de citit în orice condiții de lumină.", image: featureDisplay },
+      { title: "Shimano 7 viteze", description: "Transmisie Shimano fiabilă cu 7 trepte pentru pedalare eficientă pe orice tip de teren urban sau suburban.", image: featureGears },
+      { title: "Frâne pe disc mecanice", description: "Frâne disc mecanice față și spate pentru opriri sigure și previzibile. Întreținere simplă și cost redus.", image: featureBrakes },
+      { title: "Preț accesibil, calitate premium", description: "Cel mai accesibil model din gama DUOTTS, fără compromisuri la capitolul calitate și fiabilitate.", image: featureFrame },
     ],
     specs: {
       "Motor": "36V 250W",
