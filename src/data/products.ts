@@ -541,7 +541,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "retro",
     image: duottsF20,
-    gallery: [duottsF20, lifestyleRetro, featureBattery],
+    gallery: [duottsF20, lifestyleRetro, f20Battery],
     shortDescription: "E-bike retro cu baterie 52V 27AH și autonomie de 140 km.",
     longDescription: "DUOTTS F20 este un e-bike cu design retro care combină stilul vintage cu tehnologia modernă. Bateria puternică de 52V 27AH oferă o autonomie excepțională de până la 140 km în mod asistat.",
     price: Math.round(1369 * EUR),
@@ -556,10 +556,10 @@ export const products: Product[] = [
       { icon: "weight", value: "150 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Baterie uriașă 52V 27AH", description: "Una dintre cele mai mari baterii din gamă, oferind o autonomie de 120-140 km în modul asistat. Ideală pentru călătorii lungi fără grija încărcării.", image: featureBattery },
-      { title: "Design retro iconic", description: "Cadru cu design retro elegant care combină nostalgia cu tehnologia de ultimă generație.", image: featureFrame },
-      { title: "Suspensie completă", description: "Suspensie față și spate pentru confort maxim pe orice tip de teren, inclusiv pe drumuri cu denivelări.", image: featureSuspension },
-      { title: "Anvelope fat 20×4.0", description: "Anvelope late de 4 inch pe roți de 20\" pentru stabilitate și tracțiune excelente, cu un centru de greutate coborât.", image: featureFattire },
+      { title: "Baterie uriașă 52V 27AH", description: "Una dintre cele mai mari baterii din gamă, oferind o autonomie de 120-140 km în modul asistat. Ideală pentru călătorii lungi fără grija încărcării.", image: f20Battery },
+      { title: "Design retro iconic", description: "Cadru cu design retro elegant care combină nostalgia cu tehnologia de ultimă generație.", image: f20Frame },
+      { title: "Suspensie completă", description: "Suspensie față și spate pentru confort maxim pe orice tip de teren, inclusiv pe drumuri cu denivelări.", image: f20Suspension },
+      { title: "Anvelope fat 20×4.0", description: "Anvelope late de 4 inch pe roți de 20\" pentru stabilitate și tracțiune excelente, cu un centru de greutate coborât.", image: f20Fattire },
     ],
     specs: {
       "Motor": "52V 750W single motor",
