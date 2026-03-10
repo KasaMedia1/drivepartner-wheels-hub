@@ -630,7 +630,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "fat-tire",
     image: duottsE26,
-    gallery: [duottsE26, featureColorchange, featureBattery],
+    gallery: [duottsE26, e26Colorframe, e26Battery],
     shortDescription: "E-bike premium cu cadru color-changing și motor Bafang 750W.",
     longDescription: "DUOTTS E26 oferă aceeași platformă premium ca și versiunea blu, cu cadru color-changing din aluminiu, motor Bafang 750W și senzor de cuplu pentru o experiență de pedalare naturală.",
     price: Math.round(1999 * EUR),
@@ -645,10 +645,10 @@ export const products: Product[] = [
       { icon: "weight", value: "150 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Cadru color-changing din aluminiu", description: "Design unic cu efect color-changing care schimbă nuanța în funcție de lumină, oferind o prezență vizuală spectaculoasă.", image: featureColorchange },
-      { title: "Motor Bafang 750W cu senzor cuplu", description: "Pedalare naturală datorită senzorului de cuplu care adaptează puterea motorului la efortul depus.", image: featureTorquesensor },
-      { title: "Baterie Samsung 20AH", description: "Autonomie generoasă de 100-120 km cu celule premium Samsung pentru fiabilitate maximă.", image: featureBattery },
-      { title: "Suspensie completă", description: "Amortizare față și spate pentru un confort excepțional pe orice suprafață.", image: featureSuspension },
+      { title: "Cadru color-changing din aluminiu", description: "Design unic cu efect color-changing care schimbă nuanța în funcție de lumină, oferind o prezență vizuală spectaculoasă.", image: e26Colorframe },
+      { title: "Motor Bafang 750W cu senzor cuplu", description: "Pedalare naturală datorită senzorului de cuplu care adaptează puterea motorului la efortul depus.", image: e26Motor },
+      { title: "Baterie Samsung 20AH", description: "Autonomie generoasă de 100-120 km cu celule premium Samsung pentru fiabilitate maximă.", image: e26Battery },
+      { title: "Suspensie completă", description: "Amortizare față și spate pentru un confort excepțional pe orice suprafață.", image: e26Suspension },
     ],
     specs: {
       "Motor": "750W Bafang",
