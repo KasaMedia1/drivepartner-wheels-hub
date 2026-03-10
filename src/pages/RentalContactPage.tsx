@@ -116,10 +116,6 @@ const RentalContactPage = () => {
                   <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
                   Service și mentenanță incluse
                 </li>
-                <li className="flex items-start gap-2">
-                  <span className="mt-1 h-1.5 w-1.5 rounded-full bg-primary shrink-0" />
-                  Livrare în toată România
-                </li>
               </ul>
             </div>
           </div>
