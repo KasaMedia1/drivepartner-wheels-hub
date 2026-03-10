@@ -31,10 +31,11 @@ const RentPage = () => {
   return (
     <>
       {/* Livratori Banner */}
-      <section
-        className="relative overflow-hidden min-h-[300px] md:min-h-[400px] flex items-center bg-cover bg-center"
-        style={{ backgroundImage: `url(${livratoriBanner})` }}
-      >
+      <section className="relative overflow-hidden min-h-[300px] md:min-h-[400px] flex items-center">
+        <div
+          className="absolute inset-0 bg-cover bg-center blur-sm scale-105"
+          style={{ backgroundImage: `url(${livratoriBanner})` }}
+        />
         <div className="container-main relative z-10 py-6 md:py-8">
           <h2 className="font-heading text-2xl md:text-4xl font-bold text-foreground drop-shadow-[0_2px_4px_rgba(255,255,255,0.8)]">Vrei să devii livrator?</h2>
           <p className="mt-2 text-foreground/90 text-sm md:text-base max-w-md drop-shadow-[0_1px_3px_rgba(255,255,255,0.8)]">
