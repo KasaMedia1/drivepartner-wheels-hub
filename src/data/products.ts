@@ -268,7 +268,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "trekking",
     image: duottsE29,
-    gallery: [duottsE29],
+    gallery: [duottsE29, lifestyleTrekking, featureTorquesensor],
     shortDescription: "E-bike premium cu motor Bafang, senzor de cuplu și Shimano 14 viteze.",
     longDescription: "DUOTTS E29 Silver este un e-bike premium echipat cu motor Bafang de 250W, senzor de cuplu pentru pedalare naturală și transmisie Shimano 2×7 viteze. Conectivitatea Bluetooth și aplicația dedicată îți oferă control total.",
     price: Math.round(1359 * EUR),
@@ -283,10 +283,10 @@ export const products: Product[] = [
       { icon: "weight", value: "120 kg", label: "Sarcină maximă" },
     ],
     features: [
-      { title: "Motor Bafang 250W cu senzor de cuplu", description: "Motor Bafang de înaltă calitate cu senzor de cuplu integrat pentru cea mai naturală experiență de pedalare. Puterea se adaptează la efortul tău în timp real." },
-      { title: "Shimano 2×7 (14 viteze)", description: "Transmisie Shimano cu 14 trepte (2×7) pentru versatilitate maximă pe orice tip de teren, de la urcări la viteze de croazieră." },
-      { title: "Frâne disc cu ulei", description: "Frâne hidraulice cu ulei față și spate pentru putere de frânare constantă în orice condiții meteo." },
-      { title: "Anvelope KENDA 27.5×2.6\"", description: "Anvelope KENDA de lățime generoasă pentru tracțiune excelentă și confort sporit pe drumuri variate." },
+      { title: "Motor Bafang 250W cu senzor de cuplu", description: "Motor Bafang de înaltă calitate cu senzor de cuplu integrat pentru cea mai naturală experiență de pedalare. Puterea se adaptează la efortul tău în timp real.", image: featureTorquesensor },
+      { title: "Shimano 2×7 (14 viteze)", description: "Transmisie Shimano cu 14 trepte (2×7) pentru versatilitate maximă pe orice tip de teren, de la urcări la viteze de croazieră.", image: featureGears },
+      { title: "Frâne disc cu ulei", description: "Frâne hidraulice cu ulei față și spate pentru putere de frânare constantă în orice condiții meteo.", image: featureBrakes },
+      { title: "Anvelope KENDA 27.5×2.6\"", description: "Anvelope KENDA de lățime generoasă pentru tracțiune excelentă și confort sporit pe drumuri variate.", image: featureFattire },
     ],
     specs: {
       "Motor": "Bafang 48V 250W",
