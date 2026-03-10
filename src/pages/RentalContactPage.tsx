@@ -67,7 +67,7 @@ const RentalContactPage = () => {
                 <div>
                   <p className="text-sm font-semibold">Telefon</p>
                   <p className="text-sm text-muted-foreground">
-                    +40 723 456 789
+                    +40 728 126 988
                   </p>
                 </div>
               </div>
