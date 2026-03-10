@@ -86,7 +86,7 @@ export const products: Product[] = [
     type: "cumparare",
     category: "mountain",
     image: duottsC29k,
-    gallery: [duottsC29k],
+    gallery: [duottsC29k, lifestyleMountain, featureMotor],
     shortDescription: "E-bike mountain 29\" cu baterie dublă și autonomie excepțională.",
     longDescription: "DUOTTS C29-K cu baterie dublă oferă o autonomie impresionantă de până la 170 km în modul asistat. Echipat cu motor hub de 750W, frâne hidraulice Zoom și anvelope Chaoyang 29×2.1, este perfect pentru trasee lungi și ture de weekend.",
     price: Math.round(1169 * EUR),
