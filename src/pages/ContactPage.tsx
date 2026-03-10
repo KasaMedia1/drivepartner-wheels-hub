@@ -36,8 +36,8 @@ const ContactPage = () => {
             <div className="flex items-start gap-3">
               <MapPin className="mt-0.5 h-5 w-5 text-primary shrink-0" />
               <div>
-                <p className="text-sm font-semibold">Sediu</p>
-                <p className="text-sm text-muted-foreground">Str. Bicicletei nr. 42, București</p>
+                <p className="text-sm font-semibold">Locație</p>
+                <p className="text-sm text-muted-foreground">București Sector 3, Calea Vitan Nr. 152</p>
               </div>
             </div>
           </div>

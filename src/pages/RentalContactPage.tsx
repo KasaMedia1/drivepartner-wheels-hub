@@ -180,7 +180,7 @@ const RentalContactPage = () => {
                       onChange={handleChange}
                       required
                       maxLength={15}
-                      placeholder="0723 456 789"
+                      placeholder="0728 126 988"
                       className="w-full rounded-md border border-border bg-background px-4 py-3 text-sm placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-primary/20"
                     />
                   </div>
