@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 import heroBg1 from "@/assets/hero-bg-1.png";
+import livratoriBg from "@/assets/livratori-bg.png";
 import heroBg2 from "@/assets/hero-bg-2.png";
 import heroBg3 from "@/assets/hero-bg-3.png";
 import { getProductsByType } from "@/data/products";
@@ -65,6 +66,33 @@ const Index = () => {
                 Descoperă ofertele de închiriere
               </Link>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* LIVRATORI */}
+      <section className="relative overflow-hidden min-h-[60vh] flex items-center"
+        style={{
+          backgroundImage: `url(${livratoriBg})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <div className="absolute inset-0 bg-foreground/50" />
+        <div className="container-main relative z-10 py-16">
+          <div className="max-w-xl">
+            <h2 className="font-heading text-3xl font-extrabold leading-tight text-primary-foreground md:text-4xl lg:text-5xl">
+              Ofertă pentru livratori
+            </h2>
+            <p className="mt-4 text-base leading-relaxed text-primary-foreground/85 md:text-lg">
+              Închiriază bicicleta electrică pentru o perioadă de 7 luni, iar la finalul acestei perioade bicicleta devine a ta.
+            </p>
+            <Link
+              to="/inchiriaza"
+              className="mt-8 inline-block rounded-md bg-primary px-6 py-3.5 font-heading text-sm font-semibold text-primary-foreground transition-colors hover:bg-primary/90"
+            >
+              Vezi ofertele de închiriere
+            </Link>
           </div>
         </div>
       </section>
