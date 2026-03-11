@@ -77,15 +77,13 @@ const ProductCard = ({ product }: ProductCardProps) => {
                 </button>
               )}
             </div>
-            {!isRental && (
-              <Link
-                to="/contact-inchiriere"
-                className="flex items-center justify-center gap-1.5 rounded-md border border-border px-3 py-2 text-xs font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
-              >
-                <Phone className="h-3 w-3" />
-                Contactează-ne
-              </Link>
-            )}
+            <Link
+              to="/contact-inchiriere"
+              className="flex items-center justify-center gap-1.5 rounded-md border border-border px-3 py-2 text-xs font-medium text-muted-foreground transition-colors hover:bg-accent hover:text-foreground"
+            >
+              <Phone className="h-3 w-3" />
+              Contactează-ne
+            </Link>
           </div>
         </div>
       </div>
