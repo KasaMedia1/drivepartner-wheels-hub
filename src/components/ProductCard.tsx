@@ -51,10 +51,10 @@ const ProductCard = ({ product }: ProductCardProps) => {
 
         <div className="mt-auto pt-4">
           <div className="flex items-baseline gap-1">
-            <span className="font-heading text-lg font-bold">
-              {isRental ? `${product.pricePerDay} RON` : `${product.price.toLocaleString("ro-RO")} RON`}
+            <span className="font-heading text-lg font-bold text-primary">
+              {isRental ? "de la 200 RON" : `${product.price.toLocaleString("ro-RO")} RON`}
             </span>
-            {isRental && <span className="text-xs text-muted-foreground">/zi</span>}
+            {isRental && <span className="text-xs text-muted-foreground">/săptămână</span>}
           </div>
 
           <div className="mt-3 flex flex-col gap-2">
