@@ -46,9 +46,8 @@ const Footer = () => {
               <li>București Sector 3, Calea Vitan Nr. 152</li>
             </ul>
             <div className="mt-4 flex gap-3">
-              <a href="#" className="text-muted-foreground transition-colors hover:text-foreground" aria-label="Facebook">FB</a>
-              <a href="#" className="ml-3 text-muted-foreground transition-colors hover:text-foreground" aria-label="Instagram">IG</a>
-              <a href="#" className="ml-3 text-muted-foreground transition-colors hover:text-foreground" aria-label="YouTube">YT</a>
+              <a href="https://www.facebook.com/profile.php?id=61581026780386" target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-colors hover:text-foreground" aria-label="Facebook">FB</a>
+              <a href="https://www.instagram.com/drive.partner/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground transition-colors hover:text-foreground" aria-label="Instagram">IG</a>
             </div>
           </div>
         </div>
