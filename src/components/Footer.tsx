@@ -8,10 +8,10 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <Link to="/" className="font-heading text-lg font-bold">
-              <span className="text-kinetic">●</span> Drivepartner Bikes
+              E-bike Zone
             </Link>
             <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
-              Biciclete premium pentru fiecare drum. Cumpără sau închiriază modelul potrivit pentru tine.
+              Biciclete electrice premium pentru fiecare drum. Cumpără sau închiriază modelul potrivit pentru tine.
             </p>
           </div>
 
@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 border-t border-border pt-6 text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Drivepartner Bikes. Toate drepturile rezervate.
+          © {new Date().getFullYear()} E-bike Zone. Toate drepturile rezervate.
         </div>
       </div>
     </footer>

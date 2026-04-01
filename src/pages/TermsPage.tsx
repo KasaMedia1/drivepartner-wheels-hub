@@ -11,7 +11,7 @@ const TermsPage = () => (
           <section>
             <h2 className="font-heading text-lg font-semibold text-foreground mb-3">1. Informații generale</h2>
             <p>
-              Website-ul drivepartner.ro este operat de Drivepartner Bikes SRL, cu sediul în București, România. 
+              Website-ul ebikezone.ro este operat de E-bike Zone SRL, cu sediul în București, România. 
               Prin accesarea și utilizarea acestui website, acceptați în mod implicit acești termeni și condiții.
             </p>
           </section>

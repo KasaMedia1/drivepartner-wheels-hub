@@ -33,7 +33,7 @@ export const reviews: Review[] = [
   {
     id: "3",
     name: "Andrei Dumitrescu",
-    text: "Am închiriat DUOTTS F26 Pro pentru un weekend la munte și a fost spectaculos. Frânele hidraulice și display-ul color sunt de top. Serviciul Drivepartner e impecabil.",
+    text: "Am închiriat DUOTTS F26 Pro pentru un weekend la munte și a fost spectaculos. Frânele hidraulice și display-ul color sunt de top. Serviciul E-bike Zone e impecabil.",
     avatar: "https://api.dicebear.com/9.x/initials/svg?seed=AD&backgroundColor=00E599",
     rating: 4,
     bikeName: "DUOTTS F26 Pro",

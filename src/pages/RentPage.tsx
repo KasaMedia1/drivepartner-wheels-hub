@@ -44,7 +44,7 @@ const RentPage = () => {
               Vrei să devii livrator?
             </h1>
             <p className="mt-4 text-base text-primary-foreground/80 md:text-lg">
-              DrivePartner te ajută cu tot procesul. Te activăm rapid ca partener pe platformele de livrare. Cel mai mic comision, plăți la timp și suport pe WhatsApp.
+              E-bike Zone te ajută cu tot procesul. Te activăm rapid ca partener pe platformele de livrare. Cel mai mic comision, plăți la timp și suport pe WhatsApp.
             </p>
 
             {/* F20 Offer Card */}
