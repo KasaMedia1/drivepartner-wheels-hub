@@ -8,7 +8,7 @@ const Footer = () => {
           {/* Brand */}
           <div>
             <Link to="/" className="font-heading text-lg font-bold">
-              <span className="text-kinetic">●</span> Drivepartner Bikes
+              E-bike Zone
             </Link>
             <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
               Biciclete premium pentru fiecare drum. Cumpără sau închiriază modelul potrivit pentru tine.
