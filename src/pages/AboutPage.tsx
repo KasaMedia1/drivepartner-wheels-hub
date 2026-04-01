@@ -5,7 +5,7 @@ const AboutPage = () => (
     <div className="container-main max-w-3xl">
       <AnimateOnScroll>
         <span className="font-heading text-xs font-semibold uppercase tracking-wider text-primary">Despre noi</span>
-        <h1 className="mt-2 font-heading text-3xl font-bold md:text-4xl">Drivepartner Bikes</h1>
+        <h1 className="mt-2 font-heading text-3xl font-bold md:text-4xl">E-bike Zone</h1>
         <div className="mt-8 space-y-6 text-muted-foreground leading-relaxed">
           <p>
             Drivepartner Bikes s-a născut din pasiunea pentru ciclism și convingerea că mobilitatea pe două roți merită o experiență premium. Suntem o echipă de ingineri, designeri și cicliști dedicați care cred că fiecare drum poate fi transformat cu bicicleta potrivită.
