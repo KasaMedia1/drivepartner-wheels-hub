@@ -3,6 +3,7 @@ import { Search, User, ShoppingCart, Menu, X } from "lucide-react";
 import { useCartStore } from "@/store/cartStore";
 import { useState } from "react";
 import logo from "@/assets/logo.png";
+import logoText from "@/assets/logo-text.png";
 
 const Header = () => {
   const { toggleCart, getItemCount } = useCartStore();
