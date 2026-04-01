@@ -17,9 +17,9 @@ const Header = () => {
     <header className="sticky top-0 z-50 border-b border-border bg-card/95 backdrop-blur-md">
       <div className="container-main flex h-16 items-center justify-between md:h-20">
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2 font-heading text-lg font-bold tracking-tight md:text-xl">
-          <img src={logo} alt="E-bike Zone" className="h-10 w-auto md:h-12" />
-          <img src={logoText} alt="E-bike Zone" className="h-6 w-auto md:h-8" />
+        <Link to="/" className="flex items-center gap-3 font-heading text-lg font-bold tracking-tight md:text-xl">
+          <img src={logo} alt="E-bike Zone" className="h-12 w-auto md:h-14" />
+          <img src={logoText} alt="E-bike Zone" className="h-8 w-auto md:h-10" />
         </Link>
 
         {/* Desktop Nav */}
