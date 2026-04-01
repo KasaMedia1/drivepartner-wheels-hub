@@ -19,7 +19,7 @@ const Header = () => {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 font-heading text-lg font-bold tracking-tight md:text-xl">
           <img src={logo} alt="E-bike Zone" className="h-[90px] w-auto md:h-28" />
-          <img src={logoText} alt="E-bike Zone" className="h-[51px] w-auto md:h-16" />
+          <img src={logoText} alt="E-bike Zone" className="h-[68px] w-auto md:h-20" />
         </Link>
 
         {/* Desktop Nav */}
