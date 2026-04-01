@@ -11,7 +11,7 @@ const Footer = () => {
               E-bike Zone
             </Link>
             <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
-              Biciclete premium pentru fiecare drum. Cumpără sau închiriază modelul potrivit pentru tine.
+              Biciclete electrice premium pentru fiecare drum. Cumpără sau închiriază modelul potrivit pentru tine.
             </p>
           </div>
 

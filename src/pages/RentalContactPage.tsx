@@ -101,7 +101,7 @@ const RentalContactPage = () => {
             {/* Quick info */}
             <div className="mt-6 rounded-xl border border-border bg-accent/50 p-6">
               <h3 className="font-heading text-sm font-bold">
-                De ce să alegi DrivePartner?
+                De ce să alegi E-bike Zone?
               </h3>
               <ul className="mt-3 space-y-2 text-sm text-muted-foreground">
                 <li className="flex items-start gap-2">

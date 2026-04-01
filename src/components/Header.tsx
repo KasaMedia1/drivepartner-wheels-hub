@@ -18,8 +18,8 @@ const Header = () => {
       <div className="container-main flex h-16 items-center justify-between md:h-20">
         {/* Logo */}
         <Link to="/" className="flex items-center gap-2 font-heading text-lg font-bold tracking-tight md:text-xl">
-          <img src={logo} alt="Drivepartner Bikes" className="h-10 w-auto md:h-12" />
-          <span>Drivepartner Bikes</span>
+          <img src={logo} alt="E-bike Zone" className="h-10 w-auto md:h-12" />
+          <img src={logoText} alt="E-bike Zone" className="h-6 w-auto md:h-8" />
         </Link>
 
         {/* Desktop Nav */}
