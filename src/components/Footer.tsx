@@ -53,7 +53,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-12 border-t border-border pt-6 text-center text-xs text-muted-foreground">
-          © {new Date().getFullYear()} Drivepartner Bikes. Toate drepturile rezervate.
+          © {new Date().getFullYear()} E-bike Zone. Toate drepturile rezervate.
         </div>
       </div>
     </footer>
