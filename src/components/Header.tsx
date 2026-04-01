@@ -15,39 +15,41 @@ const Header = () => {
 
   return (
     <header className="sticky top-0 z-50 border-b border-border bg-card/95 backdrop-blur-md">
-      <div className="container-main flex h-16 items-center justify-between md:h-20">
-        {/* Logo */}
+      <div className="container-main relative flex h-24 items-center justify-between md:h-32">
+        {/* Logo icon */}
         <Link to="/" className="flex items-center gap-3 font-heading text-lg font-bold tracking-tight md:text-xl">
           <img src={logo} alt="E-bike Zone" className="h-[90px] w-auto md:h-28" />
-          <img src={logoText} alt="E-bike Zone" className="h-[100px] w-auto md:h-[120px]" />
         </Link>
 
-        {/* Desktop Nav */}
-        <nav className="hidden items-center gap-1 md:flex">
-          <Link
-            to="/cumpara"
-            className={`rounded-md px-5 py-2.5 font-heading text-sm font-semibold transition-colors ${
-              isActive("/cumpara")
-                ? "bg-primary text-primary-foreground"
-                : "text-foreground hover:bg-accent"
-            }`}
-          >
-            Cumpără
-          </Link>
-          <Link
-            to="/inchiriaza"
-            className={`rounded-md px-5 py-2.5 font-heading text-sm font-semibold transition-colors ${
-              isActive("/inchiriaza")
-                ? "bg-secondary text-secondary-foreground"
-                : "text-foreground hover:bg-accent"
-            }`}
-          >
-            Închiriază
-          </Link>
-        </nav>
+        {/* Centered logo text */}
+        <Link to="/" className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+          <img src={logoText} alt="E-bike Zone" className="h-[140px] w-auto md:h-[180px]" />
+        </Link>
 
-        {/* Right Icons */}
+        {/* Desktop Nav + Right Icons */}
         <div className="flex items-center gap-2">
+          <nav className="hidden items-center gap-1 md:flex">
+            <Link
+              to="/cumpara"
+              className={`rounded-md px-5 py-2.5 font-heading text-sm font-semibold transition-colors ${
+                isActive("/cumpara")
+                  ? "bg-primary text-primary-foreground"
+                  : "text-foreground hover:bg-accent"
+              }`}
+            >
+              Cumpără
+            </Link>
+            <Link
+              to="/inchiriaza"
+              className={`rounded-md px-5 py-2.5 font-heading text-sm font-semibold transition-colors ${
+                isActive("/inchiriaza")
+                  ? "bg-secondary text-secondary-foreground"
+                  : "text-foreground hover:bg-accent"
+              }`}
+            >
+              Închiriază
+            </Link>
+          </nav>
           <button className="hidden rounded-md p-2.5 text-foreground transition-colors hover:bg-accent md:flex" aria-label="Caută">
             <Search className="h-5 w-5" />
           </button>
